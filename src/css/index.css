@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(244, 241, 250);
+}
+
+.navbar-font {
+    font-family: "Mulish", serif;
+    font-weight:600;
+    font-size: 14px;
+}
+
+button {
+    border-color: transparent;
+}
+
+#myHeader{
+    background-color:white;
+    z-index: 1;
+    top: 0;
+}
+
+.floatingNav {
+    background-color:rgb(244, 241, 250);
+    border-bottom: 2px solid;
+    border-color:rgba(243, 244, 246,1);
+}
+
+.container-1{
+    z-index: -1;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    margin: auto;
+    width: 80%;
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    margin: auto;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+
+  
