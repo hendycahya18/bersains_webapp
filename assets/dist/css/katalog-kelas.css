@@ -227,6 +227,10 @@ body {
     margin-bottom: 36px;
 }
 
+.card .row {
+    margin-bottom: 8px;
+}
+
 .container .more-btn {
     margin-top: 48px;
     margin-bottom: 48px;
