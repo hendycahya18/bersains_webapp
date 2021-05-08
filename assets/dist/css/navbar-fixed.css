@@ -1,0 +1,98 @@
+.navbar {
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.floatingNav {
+    border-bottom: 2px solid;
+    color: #E0E0E0;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .nav-link.active{
+    border-bottom: 2px solid #602A82;
+}
+
+.navbar .container-fluid .navbar-nav .nav-link{
+    color: #333333;
+}
+
+.nav-item .btn-masuk {
+    width: 128px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    color:#602A82 ;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 0 !important;
+    margin-bottom: 10px;
+}
+
+.nav-item .btn-daftar {
+    width: 128px;
+    background-color: #602A82;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item{
+    margin-right: 36px;
+}
+
+.navbar .container-fluid .navbar-nav .nav-item .nav-link:hover{
+    border-bottom: 2px solid #602A82;
+}
+
+.vl {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .nav-item .btn-masuk {
+        width: 128px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        color:#602A82 ;
+        padding: 8px 16px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-right: 0 !important;
+        margin-bottom: 0px;
+    }
+    
+    .nav-item .btn-daftar {
+        width: 128px;
+        background-color: #602A82;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+    
+    .navbar .container-fluid .navbar-nav .nav-item{
+        margin-right: 36px;
+    }
+    
+    .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover{
+        border-bottom: 2px solid #602A82;
+    }
+    
+    
+    .navbar .container-fluid .navbar-nav .nav-item:last-child{
+        margin-right: 0;
+    }
+    
+    .navbar .container-fluid .navbar-nav .nav-item:nth-last-child(2){
+        margin-right: 16px;
+    }
+    
+    .navbar .container-fluid .navbar-nav {
+        margin: 0 auto;
+    }
+    
+    .vl {
+        display: inline;
+        border-left: 2px solid #E0E0E0;
+        height: 16px;
+    }
+}
