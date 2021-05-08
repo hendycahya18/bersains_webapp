@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:white;
+    font-size: 16px;
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.container {
+    /* border: 1px solid green; */
+    width: 100% !important;
+    max-width: 1366px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .row {
+    border: 1px solid blue;
+}
+
+.col {
+    border: 1px solid red;
+} */
+
+.container .title {
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #421A61;
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.container .sub-title {
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #4F4F4F;
+    margin-bottom: 48px;
+}
+
+.container .search .form-control{
+    position: relative;
+    height: 52px !important;
+    margin-bottom: 16px;
+}
+
+.container .search .search-btn {
+    position: absolute;
+    top: 14px;
+    right: 5%;
+    z-index: 2;
+}
+
+.container .search .search-btn::placeholder {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BDBDBD;
+}
+
+.container .search-info {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.container .kelas-btn {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 12px;
+    width: 171px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4F4F4F;
+    margin-bottom: 38px;
+}
+
+.container .filter-btn {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 12px;
+    width: 171px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #602A82;
+    margin-bottom: 38px;
+}
+
+.container .filter-name {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #828282;
+    margin-bottom: 16px;
+}
+
+#exampleFormControlSelect1 {
+    height: 44px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.container .discount-info-btn {
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 6px;
+    width: 100%;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2D9CDB;
+    margin-bottom: 84px;
+}
+
+
+.card-body .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-body .container .row .col{
+    margin-top: 6px;
+}
+
+.card-body .container .row .nama-bidang{
+    font-size: 14px;
+    color: #828282;
+}
+
+.card-body .container .row .nama-kelas{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.card-body .container .row .harga-kelas {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F2C94C;
+}
+
+.card-body .container .row .diskon-kelas {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
+    text-decoration: line-through;
+}
+
+
+.card-body .container .row .waktu{
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+.card-body .container .row .jml-sub-bab{
+    font-size: 12px;
+    color: #4F4F4F;
+}
+
+.card-body .container .row .jml-pelanggan{
+    font-size: 12px;
+    color: #828282;
+}
+
+.card-body .container .row .waktu img{
+    margin-right: 5px;
+}
+
+.card-body .container .row .jml-sub-bab img{
+    margin-right: 5px;
+}
+
+.container .card {
+    margin: auto;
+    border-radius: 16px;
+    margin-bottom: 36px;
+}
+
+.container .more-btn {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 16px 32px;
+    width: 260px;
+    height: 52px;
+    background: #602A82;
+    box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+    border-radius: 8px;
+    color: white;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.container .col.col-btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

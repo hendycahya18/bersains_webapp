@@ -1,0 +1,66 @@
+footer .container-fluid {
+    margin: 0;
+    width: 100% !important;
+    border-top: 1px solid #E0E0E0;
+    margin-top: 48px;
+}
+
+footer .container-fluid .row-t {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+footer .container-fluid .col-l {
+    background-color: #F2F2F2;
+    padding: 64px 112px;
+}
+
+footer .container-fluid .col-r {
+    padding: 64px 112px;
+}
+
+
+footer .container-fluid .col-b {
+    background-color: #F2F2F2;
+    padding: 16px;
+    text-align: center;
+    color: #828282;
+    font-size: 12px;
+}
+
+footer .container-fluid .col-l .footer-name {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #4F4F4F;
+    margin-bottom: 16px;
+}
+
+footer .container-fluid .col-l .footer-alamat {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+    margin-bottom: 24px;
+}
+
+footer .col-r .col.col-lg-4.col-md-4.col-sm-12.pb-lg-3.pb-sm-2 {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #828282;
+}
+
+footer .col-r .row.pb-lg-3.pb-sm-2 a{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #828282;
+}
