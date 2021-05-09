@@ -44,6 +44,11 @@ body {
     box-shadow: 0px 8px 24px rgba(242, 201, 76, 0.16);
     border-radius: 8px;
     box-shadow: 0px 8px 24px 0px #F2C94C29;
+    transition: filter .2s;
+}
+
+.jumbotron .btn:hover {
+    filter: brightness(90%);
 }
 
 .jumbotron .btn span {
@@ -90,6 +95,17 @@ body {
 .Kelas .card {
     margin: auto;
     border-radius: 16px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.Kelas .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    opacity: 1;
+}
+
+.Kelas .card .card-img-top {
+    border-radius: 16px 16px 0px 0px;
 }
 
 .Kelas .row .col .kelas-row-1{
@@ -131,15 +147,19 @@ body {
     border-radius: 8px;
     background: #602A82;
     box-shadow: 0px 8px 24px 0px #602A8229;
+    transition: opacity .2s;
 }
 
+.Kelas .row .col .btn:hover {
+    opacity: 0.9;
+}
 .card-body .container {
     padding-left: 0;
     padding-right: 0;
 }
 
 .card-body .container .row .col{
-    margin-top: 6px;
+    margin-top: 0px;
 }
 
 .card-body .container .row .nama-bidang{
@@ -220,6 +240,17 @@ body {
 .try-out .card {
     margin: auto;
     border-radius: 16px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.try-out .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    opacity: 1;
+}
+
+.try-out .card .card-img-top {
+    border-radius: 16px 16px 0px 0px;
 }
 
 .try-out .row .col .try-out-row-1{
@@ -262,6 +293,11 @@ body {
     border-radius: 8px;
     background: #602A82;
     box-shadow: 0px 8px 24px 0px #602A8229;
+    transition: opacity .2s;
+}
+
+.try-out .row .col .btn:hover {
+    opacity: 0.9;
 }
 
 .card-body .container .row .nama-try-out{
@@ -342,4 +378,8 @@ body {
 
 .slick-arrow {
     transition: opacity 0.5s ease-out;
+}
+
+.row.row-slider .col a {
+    text-decoration: none !important;
 }

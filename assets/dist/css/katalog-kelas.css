@@ -161,7 +161,7 @@ body {
 }
 
 .card-body .container .row .col{
-    margin-top: 6px;
+    margin-top: 0px;
 }
 
 .card-body .container .row .nama-bidang{
@@ -225,10 +225,25 @@ body {
     margin: auto;
     border-radius: 16px;
     margin-bottom: 36px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.container .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    opacity: 1;
+}
+
+.container .row .col a {
+    text-decoration: none !important;
 }
 
 .card .row {
     margin-bottom: 8px;
+}
+
+.card .card-img-top {
+    border-radius: 16px 16px 0 0;
 }
 
 .container .more-btn {
@@ -246,6 +261,11 @@ body {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+    transition: opacity .2s;
+}
+
+.container .more-btn:hover {
+    opacity: 0.9;
 }
 
 .container .col.col-btn {
