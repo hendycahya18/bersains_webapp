@@ -69,13 +69,13 @@ body {
     z-index: 2;
 }
 
-.container .search .search-btn::placeholder {
+.container .search .form-control::placeholder {
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    color: #BDBDBD;
+    color: rgba(189, 189, 189, 1);
 }
 
 .container .search-info {

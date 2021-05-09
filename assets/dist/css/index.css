@@ -163,6 +163,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #F2C94C;
+    display: inline;
 }
 
 .card-body .container .row .diskon-kelas {
@@ -173,30 +174,36 @@ body {
     line-height: 23px;
     color: #828282;
     text-decoration: line-through;
+    display: inline;
 }
 
 
 .card-body .container .row .waktu{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
 .card-body .container .row .jml-sub-bab{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
 .card-body .container .row .jml-pelanggan{
     font-size: 12px;
     color: #828282;
+    display: inline;
 }
 
 .card-body .container .row .waktu img{
     margin-right: 5px;
+    display: inline;
 }
 
 .card-body .container .row .jml-sub-bab img{
     margin-right: 5px;
+    display: inline;
 }
 
 .try-out {
@@ -273,6 +280,7 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #F2C94C;
+    display: inline;
 }
 
 .card-body .container .row .diskon-try-out {
@@ -283,25 +291,55 @@ body {
     line-height: 23px;
     color: #828282;
     text-decoration: line-through;
+    display: inline;
 }
 
 .card-body .container .row .soal-try-out{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
 .card-body .container .row .waktu-try-out{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
 .card-body .container .row .jenis-try-out{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
 .card-body .container .row .sistem-try-out{
     font-size: 12px;
     color: #4F4F4F;
+    display: inline;
 }
 
+.card-body .container .row img {
+    display: inline;
+}
+
+
+.card-body .container .row .rating img {
+    display: inline;
+}
+
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+
+.slick-arrow {
+    transition: opacity 0.5s ease-out;
+}
