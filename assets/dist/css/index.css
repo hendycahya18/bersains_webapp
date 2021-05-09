@@ -45,6 +45,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 8px 24px 0px #F2C94C29;
     transition: filter .2s;
+    margin-bottom: 24px;
 }
 
 .jumbotron .btn:hover {
@@ -61,7 +62,11 @@ body {
     font-size: 16px;
 }
 
-.jumbotron .col-8 span {
+.jumbotron .col-countdown {
+    margin-bottom: 36px;
+}
+
+.jumbotron .col-countdown span {
     color:#F2C94C;
 }
 

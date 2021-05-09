@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:white;
+    font-size: 16px;
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 90%;
+}

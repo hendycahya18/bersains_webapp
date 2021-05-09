@@ -47,7 +47,7 @@ footer .container-fluid .col-l .footer-alamat {
     margin-bottom: 24px;
 }
 
-footer .col-r .col.col-lg-4.col-md-4.col-sm-12.pb-lg-3.pb-sm-2 {
+footer .col-r .col.col-lg-4.col-md-4.col-sm-12.pb-lg-3.pb-2 {
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
@@ -56,7 +56,7 @@ footer .col-r .col.col-lg-4.col-md-4.col-sm-12.pb-lg-3.pb-sm-2 {
     color: #828282;
 }
 
-footer .col-r .row.pb-lg-3.pb-sm-2 a{
+footer .col-r .row.pb-lg-3.pb-2 a{
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
