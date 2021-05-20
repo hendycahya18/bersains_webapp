@@ -12,6 +12,7 @@
   height: 120px;
 }
 
+
 .jumbotron-sr,
 .jumbotron-sr-sc,
 .jumbotron-sr-fc .d-flex,
@@ -57,9 +58,6 @@ body {
   border-radius: 12px;
 }
 
-.jumbotron .icon-box img {
-   
-}
 
 .jumbotron .btn {
   background-color: #602a82;
@@ -114,7 +112,7 @@ body {
 
 .s1 .box {
   text-align: center;
-  margin-top: 112px;
+  margin-top: 24px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 16px 24px;
@@ -430,8 +428,15 @@ body {
 @media only screen and (max-width: 768px) {
   .icon-box,
   .jumbotron-fr,
+  .jumbotron-tr,
   .jumbotron-sr-fc,
   .jumbotron-sr-tc {
+    display: none;
+  }
+  .jumbotron {
+    height: auto;
+  }
+  .s1 .box {
     display: none;
   }
 }
