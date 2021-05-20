@@ -4,23 +4,11 @@
 .col {
     border: 1px solid blue;
 } */
-
-
-
-.jumbotron-fr,
-.jumbotron-tr {
-  height: 120px;
-}
-
-
-.jumbotron-sr,
-.jumbotron-sr-sc,
 .jumbotron-sr-fc .d-flex,
 .jumbotron-sr-tc .d-flex {
   height: 380px;
   /* border: 1px solid green; */
 }
-/* end for testing grid */
 
 * {
   margin: 0;
@@ -36,7 +24,6 @@ body {
 }
 
 .jumbotron {
-  height: 600px;
   padding-top: 0px;
   /* background-color: red !important; */
 }
@@ -425,16 +412,13 @@ body {
   text-decoration: none !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
   .icon-box,
   .jumbotron-fr,
   .jumbotron-tr,
   .jumbotron-sr-fc,
   .jumbotron-sr-tc {
     display: none;
-  }
-  .jumbotron {
-    height: auto;
   }
   .s1 .box {
     display: none;
