@@ -14,6 +14,7 @@
 
 .navbar .container-fluid .navbar-nav .nav-link{
     color: #333333;
+    border-bottom: 2px solid white;
 }
 
 .nav-item .btn-masuk {
