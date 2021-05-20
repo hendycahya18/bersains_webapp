@@ -24,12 +24,6 @@ body {
   margin: auto;
 }
 
-#particles-js {
-  position: absolute;
-  height: 600px;
-  width: 1920px;
-}
-
 .jumbotron {
   height: 600px;
   padding-top: 0px;
@@ -74,9 +68,9 @@ body {
 }
 
 .jumbotron .text {
-  margin-bottom: 24px;
+  margin-bottom: 100px;
   margin-top: 24px;
-  font-size: 16px;
+  font-size: 20px;
   color: #828282;
   text-align: center;
 }
@@ -89,7 +83,7 @@ body {
   border-radius: 8px;
   box-shadow: 0px 8px 24px 0px #f2c94c29;
   transition: filter 0.2s;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .jumbotron .btn:hover {
@@ -112,7 +106,7 @@ body {
 
 .s1 .box {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 112px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 16px 24px;
