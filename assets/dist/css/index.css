@@ -1,3 +1,12 @@
+/* .row, .icon-box {
+    border: 1px solid red;
+}
+.col {
+    border: 1px solid blue;
+} */
+
+
+
 .jumbotron-fr,
 .jumbotron-tr {
   height: 120px;
@@ -7,7 +16,8 @@
 .jumbotron-sr-sc,
 .jumbotron-sr-fc .d-flex,
 .jumbotron-sr-tc .d-flex {
-  height: 400px;
+  height: 380px;
+  /* border: 1px solid green; */
 }
 /* end for testing grid */
 
@@ -48,9 +58,7 @@ body {
 }
 
 .jumbotron .icon-box img {
-  position: relative;
-  top: 24.24%;
-  bottom: 24.53%;
+   
 }
 
 .jumbotron .btn {
@@ -68,7 +76,7 @@ body {
 }
 
 .jumbotron .text {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-top: 24px;
   font-size: 20px;
   color: #828282;
