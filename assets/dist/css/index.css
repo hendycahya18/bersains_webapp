@@ -1,15 +1,5 @@
-/* testing grid */
-.jumbotron .row {
-  /* border: 2px solid red; */
-}
-
-.jumbotron .col,
-.d-flex,
-.icon-box {
-  /* border: 2px solid blue; */
-}
-
-.jumbotron-fr, .jumbotron-tr {
+.jumbotron-fr,
+.jumbotron-tr {
   height: 120px;
 }
 
