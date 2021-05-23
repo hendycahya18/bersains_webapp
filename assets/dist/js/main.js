@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $(".row.row-slider").slick({
+    row: 0,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
