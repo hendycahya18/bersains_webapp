@@ -51,6 +51,12 @@ body {
   border-radius: 12px;
 }
 
+.end-jumbotron .h1, 
+.end-jumbotron .text {
+  text-align: start !important;
+}
+
+.end-jumbotron .h1,
 .jumbotron .h1 {
   color: #421a61;
   font-weight: 800;
@@ -60,6 +66,7 @@ body {
   text-align: center;
 }
 
+.end-jumbotron .text,
 .jumbotron .text {
   margin-bottom: 48px;
   margin-top: 24px;
@@ -68,6 +75,7 @@ body {
   text-align: center;
 }
 
+.end-jumbotron .btn,
 .jumbotron .btn {
   width: 170px;
   height: 52px;
@@ -81,23 +89,25 @@ body {
   margin-bottom: 12px;
 }
 
+.end-jumbotron .btn:hover,
 .jumbotron .btn:hover {
   background: #FFFFFF;
   border: 2px solid #F2C94C;
   color: #F2C94C;
 }
 
+.end-jumbotron .btn span,
 .jumbotron .btn span {
   display: block;
   text-align: center;
   padding: 6px 2px;
 }
 
-.jumbotron .col-countdown {
+.end-jumbotron .col-countdown {
   margin-bottom: 36px;
 }
 
-.jumbotron .col-countdown span {
+.end-jumbotron .col-countdown span {
   color: #f2c94c;
 }
 
@@ -472,6 +482,7 @@ body {
 }
 
 .tutor .card {
+  margin: 0px 50px;
   border-radius: 12px 12px 12px 12px;
   border: 1px solid #e0e0e0;
 }
@@ -608,6 +619,11 @@ body {
   color: black;
 }
 
+.end-jumbotron {
+  margin-top: 112px;
+  margin-bottom: 112px;
+}
+
 @media only screen and (min-width: 576px) {
   .tutor .col-tutor-img {
     max-width: 267px;
@@ -660,7 +676,6 @@ body {
   }
   .tutor .card {
     width: 18rem;
-    margin: auto;
   }
   .tutor .row-btn {
     justify-content: center;

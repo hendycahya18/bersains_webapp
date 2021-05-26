@@ -39,3 +39,13 @@ $(document).ready(function () {
     ],
   });
 });
+
+$(document).ready(function () {
+  $(".tutor-slider").slick({
+    row: 0,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
+});
