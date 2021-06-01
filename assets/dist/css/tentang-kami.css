@@ -1,0 +1,102 @@
+/* .row {
+    border: 1px solid blue;
+}
+
+.col {
+    border: 1px solid red;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:white;
+    font-size: 16px;
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.container {
+    /* border: 1px solid green; */
+    width: 100% !important;
+    max-width: 1366px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header,
+.our-team {
+    margin-top: 64px;
+}
+
+.our-team {
+    margin-bottom: 64px;
+}
+
+.heading-txt {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #421A61;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #4F4F4F;
+}
+
+.heading-img {
+    display: none;
+}
+
+.card-body .container .row .col{
+    margin-top: 0px;
+}
+
+.card {
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.container .row .col a {
+    text-decoration: none !important;
+}
+
+.card .row {
+    margin-bottom: 8px;
+}
+
+.card .card-img-top {
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body .container .row .member-name{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.card-body .container .row .member-position{
+    font-size: 14px;
+    color: #828282;
+}
+
+@media only screen and (min-width: 992px) { 
+    .heading-img {
+        display: flex;
+    }
+ }

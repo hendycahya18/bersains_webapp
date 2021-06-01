@@ -64,3 +64,7 @@ footer .col-r .row.pb-lg-3.pb-2 a{
     line-height: 21px;
     color: #828282;
 }
+
+footer a {
+    text-decoration: none !important;
+}

@@ -55,10 +55,10 @@
               <a class="nav-link" href="katalog-to.html">Try Out</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tutor</a>
+              <a class="nav-link" href="./list-tutor.html">Tutor</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang Kami</a>
+              <a class="nav-link" href="./tentang-kami.html">Tentang Kami</a>
             </li>
             <li class="nav-item">
               <div class="vl"></div>
@@ -126,12 +126,17 @@
           <button type="button" class="btn kelas-btn">Rekomendasi</button>
         </div>
         <div class="col col-6 col-sm-4 col-lg-2 text-center">
-          <button type="button" class="btn filter-btn">
+          <button
+            type="button"
+            class="btn filter-btn"
+            id="filter-btn"
+            onclick="toggleFilter()"
+          >
             <img src="./assets/img/Kelas/vector/filter.png" alt="" /> Filter
           </button>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center hidden" id="toggle-filter">
         <div class="col col-12 col-md-3">
           <div class="container">
             <div class="row">
@@ -182,10 +187,17 @@
               <div class="col filter-name">Potongan Harga</div>
             </div>
             <div class="row">
-              <div class="col">
-                <button type="button" class="btn discount-info-btn">
-                  Aktif
-                </button>
+              <div
+                class="col"
+                style="
+                  margin-bottom: 84px;
+                  height: 44px;
+                  display: flex;
+                  align-items: center;
+                "
+              >
+                <input type="checkbox" class="btn discount-info-btn" />
+                <div class="row checkboxtext">Hanya tampilkan harga diskon</div>
               </div>
             </div>
           </div>
@@ -193,8 +205,8 @@
       </div>
       <div class="row justify-content-center">
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -214,42 +226,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -258,268 +262,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-3.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-2.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-4.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-5.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -539,42 +283,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -583,203 +319,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-2.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-3.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
-              <img
-                src="./assets/img/Kelas/Kelas-4.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-bidang">Astronomi</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="nama-kelas">
-                        Besaran Mendasar dalam Astrofisika
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
-                        <img
-                          src="./assets/img/Kelas/vector/waktu.png"
-                          alt=""
-                        />136 menit
-                      </div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="jml-sub-bab">
-                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
-                        Sub-bab
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -799,42 +340,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -843,8 +376,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -864,42 +397,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -908,8 +433,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -929,42 +454,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -973,8 +490,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -994,42 +511,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -1038,8 +547,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -1059,42 +568,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -1103,8 +604,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -1124,42 +625,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -1168,8 +661,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -1189,42 +682,34 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
                     </div>
                   </div>
                 </div>
@@ -1233,8 +718,8 @@
           </a>
         </div>
         <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
-          <a href="#">
-            <div class="card" style="width: 18rem; height: 480px">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
               <img
                 src="./assets/img/Kelas/Kelas-1.png"
                 class="card-img-top"
@@ -1254,42 +739,433 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="waktu">
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
                         <img
                           src="./assets/img/Kelas/vector/waktu.png"
                           alt=""
                         />136 menit
                       </div>
                     </div>
-                    <div class="col col-auto">
+                    <div class="col col-5 px-1 my-0 text-center">
                       <div class="jml-sub-bab">
                         <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
                         Sub-bab
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="harga-kelas">Rp45.000</div>
-                    </div>
-                    <div class="col col-auto">
-                      <div class="diskon-kelas">Rp60.000</div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col col-auto">
-                      <div class="rating">
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
-                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
                         <img src="./assets/img/Kelas/vector/stars.png" alt="" />
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
                     <div class="col">
-                      <div class="jml-pelanggan">4,8 (2021 Murid)</div>
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+          <a href="./deskripsi-kelas.html">
+            <div class="card" style="width: 18rem; height: 470px">
+              <img
+                src="./assets/img/Kelas/Kelas-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-bidang">Astronomi</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="nama-kelas">
+                        Besaran Mendasar dalam Astrofisika
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mx-n2">
+                    <div class="col col-auto px-2">
+                      <div class="harga-kelas">Rp45.000</div>
+                    </div>
+                    <div class="col col-auto px-2">
+                      <div class="diskon-kelas">Rp60.000</div>
+                    </div>
+                  </div>
+                  <div class="row mx-n1 my-0 justify-content-between">
+                    <div class="col col-auto px-1 my-0 text-left">
+                      <div class="waktu" style="text-align: center">
+                        <img
+                          src="./assets/img/Kelas/vector/waktu.png"
+                          alt=""
+                        />136 menit
+                      </div>
+                    </div>
+                    <div class="col col-5 px-1 my-0 text-center">
+                      <div class="jml-sub-bab">
+                        <img src="./assets/img/Kelas/vector/bab.png" alt="" />11
+                        Sub-bab
+                      </div>
+                    </div>
+                    <div class="col col-auto px-1 my-0 text-right mr-0">
+                      <div class="jml-pelanggan">
+                        4,8
+                        <img src="./assets/img/Kelas/vector/stars.png" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1300,7 +1176,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col col-btn">
-          <button type="button" class="btn more-btn">
+          <button type="button" class="btn more-btn" style="font-weight: 700">
             Tampilkan Lebih Banyak
           </button>
         </div>
@@ -1355,9 +1231,15 @@
                 </div>
                 <div class="col col-lg-3 col-md-3 col-12">
                   <div class="container">
-                    <div class="row pb-lg-3 pb-2"><a href="">Kelas</a></div>
-                    <div class="row pb-lg-3 pb-2"><a href="">Try Out</a></div>
-                    <div class="row pb-lg-3 pb-2"><a href="">Tutor</a></div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-kelas.html">Kelas</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-to.html">Try Out</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./list-tutor.html">Tutor</a>
+                    </div>
                   </div>
                 </div>
                 <div class="col col-lg-3 col-md-3 col-12">
@@ -1387,5 +1269,6 @@
     <script src="./assets/dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.js"></script>
     <script src="./assets/dist/js/navbar.js"></script>
+    <script src="./assets/dist/js/katalog-kelas.js"></script>
   </body>
 </html>

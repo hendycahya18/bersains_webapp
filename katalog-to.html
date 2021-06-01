@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap to CSS -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/dist/css/navbar-fixed.css" />
+    <link rel="stylesheet" href="assets/dist/css/katalog-to.css" />
+    <link rel="stylesheet" href="assets/dist/css/footer.css" />
+    <title>Katalog Try Out</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      id="myNav"
+    >
+      <div class="container-fluid justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/Logo.png" alt="" width="auto" height="70" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center mr-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog-kelas.html">Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="katalog-to.html"
+                >Try Out</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./list-tutor.html">Tutor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tentang-kami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <div class="vl"></div>
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-masuk font-weight-bold"
+                href="signin.html"
+                >Masuk</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-daftar font-weight-bold"
+                href="signup.html"
+                >Daftar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end for navbar -->
+    <!-- List TO -->
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-lg-4 col-md-5 col-sm-6 title">Try Out</div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-7 col-sm-8 sub-title">
+            Ayo, cari try out lalu uji, evaluasi, dan tingkatkan terus kemampuanmu dengan soal soal terbaik
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-7 col-sm-8 search">
+            <div class="search-btn">
+              <a href="#"
+                ><img src="./assets/img/Kelas/vector/search.png" alt=""
+              /></a>
+            </div>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Cari try out yang ingin kamu kerjakan"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-lg-6 col-md-7 col-sm-8 search-info">
+            Contoh: KSN-K,  KSN-P, Try out 2
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-6 col-sm-4 col-lg-2 text-center">
+            <button type="button" class="btn kelas-btn">Berlangsung</button>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-2 text-center">
+            <button type="button" class="btn kelas-btn">Mendatang</button>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-2 text-center">
+            <button type="button" class="btn kelas-btn">Berlalu</button>
+          </div>
+          <div class="col col-6 col-sm-4 col-lg-2 text-center">
+            <button
+              type="button"
+              class="btn filter-btn"
+              id="filter-btn"
+              onclick="toggleFilter()"
+            >
+              <img src="./assets/img/Kelas/vector/filter.png" alt="" /> Filter
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-center hidden" id="toggle-filter">
+          <div class="col col-12 col-md-3">
+            <div class="container">
+              <div class="row">
+                <div class="col filter-name">Mata Pelajaran</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-</option>
+                      <option>Astronomi</option>
+                      <option>Biologi</option>
+                      <option>Ekonomi</option>
+                      <option>Fisika</option>
+                      <option>Geografi</option>
+                      <option>Kebumian</option>
+                      <option>Kimia</option>
+                      <option>Matematika</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-3">
+            <div class="container">
+              <div class="row">
+                <div class="col filter-name">Harga</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>-</option>
+                      <option>< Rp10.000</option>
+                      <option>Rp10.000 < x < Rp50.000</option>
+                      <option>Rp50.000 < x < Rp100.000</option>
+                      <option>> Rp100.000</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-md-3 col-xl-2">
+            <div class="container">
+              <div class="row">
+                <div class="col filter-name">Potongan Harga</div>
+              </div>
+              <div class="row">
+                <div
+                  class="col"
+                  style="
+                    margin-bottom: 84px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                  "
+                >
+                  <input type="checkbox" class="btn discount-info-btn" />
+                  <div class="row checkboxtext">Hanya tampilkan harga diskon</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="col col-12 col-sm-7 col-md-5 col-xl-3 align-self-center">
+            <a href="#">
+                <div class="card" style="width: 18rem; height: 460px;" >
+                  <img src="./assets/img/Kelas/Kelas-2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <div class="nama-try-out">Tryout 2 Bersiap KSN-K 2022 - Kebumian</div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col-auto">
+                          <div class="harga-try-out">
+                            Rp45.000
+                          </div>
+                        </div>
+                        <div class="col col-auto">
+                          <div class="diskon-try-out">
+                            Rp60.000
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="soal-try-out">
+                            <img src="./assets/img/Kelas/vector/soal.png" alt=""> 80 Soal
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="waktu-try-out">
+                            <img src="./assets/img/Kelas/vector/waktu.png" alt=""> 120 Menit
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col col">
+                          <div class="jenis-try-out">
+                            <img src="./assets/img/Kelas/vector/jenis.png" alt=""> Pilihan Ganda
+                          </div>
+                        </div>
+                        <div class="col col">
+                          <div class="sistem-try-out">
+                            <img src="./assets/img/Kelas/vector/sistem.png" alt=""> Sistem IRT
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col col-btn">
+            <button type="button" class="btn more-btn" style="font-weight: 700">
+              Tampilkan Lebih Banyak
+            </button>
+          </div>
+        </div>
+    </div>
+    <!-- end for list TO -->
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row row-t">
+          <div class="col col-lg-4 col-md-12 col-sm-12 col-l">
+            <div class="container">
+              <div class="row">
+                <div class="col footer-name">Bersains Indonesia</div>
+              </div>
+              <div class="row">
+                <div class="col footer-alamat">
+                  Alamat <br />
+                  Griya Bogor Asri Jl. Camar no 4, Bubulak, Kec. Bogor Barat,
+                  Kota Bogor, Indonesia, 161165
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/facebook.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/instagram.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/twitter.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/youtube.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-8 col-md-12 col-12 col-r">
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-4 col-md-4 col-12 pb-lg-3 pb-2">
+                  Sainskan Indonesia Bersama Bersains
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-kelas.html">Kelas</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-to.html">Try Out</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./list-tutor.html">Tutor</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2"><a href="">FAQ</a></div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Tentang Kami</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Hubungi Kami</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-b">
+            ©Copyright Bersains Indonesia 2021 | <a href="">Terms</a> |
+            <a href="">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end for footer -->
+    <script src="./assets/dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+    <script src="./assets/dist/js/navbar.js"></script>
+    <script src="./assets/dist/js/katalog-to.js"></script>
+  </body>
+</html>

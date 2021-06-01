@@ -25,14 +25,29 @@ body {
   background: white;
   font-size: 16px;
   font-family: "Mulish", Arial, Helvetica, sans-serif !important;
-  max-width: 1920px;
+  max-width: 1700px;
   margin: auto;
 }
 
 .jumbotron {
-  padding-top: 0px;
+  padding-top: 15px;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   /* background-color: red !important; */
 }
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .container-fluid {
   width: 90%;
@@ -139,7 +154,7 @@ body {
 
 .Kelas .card {
   margin: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: box-shadow 0.4s, opacity 0.4s;
   opacity: 0.9;
 }
@@ -150,7 +165,7 @@ body {
 }
 
 .Kelas .card .card-img-top {
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .Kelas .row .col .kelas-row-1,
@@ -266,7 +281,7 @@ body {
 
 .card-body .container .row .jml-pelanggan {
   font-size: 12px;
-  color: #828282;
+  color: #E8C046;
   display: inline;
 }
 
@@ -292,7 +307,7 @@ body {
 
 .try-out .card {
   margin: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   transition: box-shadow 0.4s, opacity 0.4s;
   opacity: 0.9;
 }
@@ -303,7 +318,7 @@ body {
 }
 
 .try-out .card .card-img-top {
-  border-radius: 16px 16px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 .try-out .row .col .try-out-row-1 {
@@ -415,8 +430,6 @@ body {
 
 .slick-prev,
 .slick-next {
-  width: 50px;
-  height: 50px;
   z-index: 1;
 }
 
@@ -624,6 +637,12 @@ body {
   margin-bottom: 112px;
 }
 
+.control-c {
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+
 @media only screen and (min-width: 576px) {
   .tutor .col-tutor-img {
     max-width: 267px;
@@ -636,6 +655,12 @@ body {
 @media only screen and (min-width: 1200px) {
   .tutor .icon-row {
     height: 30%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .end-jumbotron .img-fluid {
+    display: none;
   }
 }
 

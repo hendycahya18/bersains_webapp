@@ -183,66 +183,6 @@ body {
     margin-top: 0px;
 }
 
-.card-body .container .row .nama-bidang{
-    font-size: 14px;
-    color: #828282;
-}
-
-.card-body .container .row .nama-kelas{
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #333333;
-}
-
-.card-body .container .row .harga-kelas {
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    color: #F2C94C;
-}
-
-.card-body .container .row .diskon-kelas {
-    font-family: Mulish;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 23px;
-    color: #828282;
-    text-decoration: line-through;
-}
-
-
-.card-body .container .row .waktu{
-    font-size: 12px;
-    color: #4F4F4F;
-    display: inline;
-}
-
-.card-body .container .row .jml-sub-bab{
-    font-size: 12px;
-    color: #4F4F4F;
-    display: inline;
-}
-
-.card-body .container .row .jml-pelanggan{
-    font-size: 12px;
-    color: #E8C046;
-    display: inline;
-}
-
-.card-body .container .row .waktu img{
-    margin-right: 5px;
-}
-
-.card-body .container .row .jml-sub-bab img{
-    margin-right: 5px;
-}
-
 .container .card {
     margin: auto;
     border-radius: 12px;
@@ -267,6 +207,69 @@ body {
 .card .card-img-top {
     border-radius: 12px 12px 0 0;
 }
+
+
+.card-body .container .row .nama-try-out {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+  }
+  
+  .card-body .container .row .harga-try-out {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #f2c94c;
+    display: inline;
+  }
+  
+  .card-body .container .row .diskon-try-out {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
+    text-decoration: line-through;
+    display: inline;
+  }
+  
+  .card-body .container .row .soal-try-out {
+    font-size: 12px;
+    color: #4f4f4f;
+    display: inline;
+  }
+  
+  .card-body .container .row .waktu-try-out {
+    font-size: 12px;
+    color: #4f4f4f;
+    display: inline;
+  }
+  
+  .card-body .container .row .jenis-try-out {
+    font-size: 12px;
+    color: #4f4f4f;
+    display: inline;
+  }
+  
+  .card-body .container .row .sistem-try-out {
+    font-size: 12px;
+    color: #4f4f4f;
+    display: inline;
+  }
+  
+  .card-body .container .row img {
+    display: inline;
+  }
+  
+  .card-body .container .row .rating img {
+    display: inline;
+  }
 
 .container .more-btn {
     margin-top: 48px;
