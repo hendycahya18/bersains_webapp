@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:white;
+    font-size: 16px;
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.container {
+    /* border: 1px solid green; */
+    width: 100% !important;
+    max-width: 1366px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.t-right {
+    margin-top: 20px;
+}
+
+/* css for text */
+.heading-txt {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+    margin-bottom: 24px;
+}
+
+.sub-heading-txt {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: justify;
+    margin-bottom: 48px;
+}
+
+.h3 ol {
+    list-style-position: inside;
+}
+
+.h3 ol li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.h3 ol li:last-child {
+    margin-bottom: 48px;
+}
+/* end css for text */
+
+/* css for card */
+/* .row {
+    border: 1px solid blue;
+}
+
+.col {
+    border: 1px solid red;
+} */
+
+.tutor-description .container-fluid {
+    max-width: 1366px !important;
+    margin: auto;
+}
+
+.card-body .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-body .container .row .col{
+    margin-top: 0px;
+}
+
+.sticky-card {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+}
+
+.container-fluid .card {
+    margin: auto;
+    border-radius: 12px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.container-fluid .card-2 {
+    margin: auto;
+    border-radius: 0 0 12px 12px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+
+.card .row {
+    margin-bottom: 8px;
+}
+
+.card .card-img-top {
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body .container .row .nama-tutor{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.card-body .container .row .prestasi-tutor{
+    font-size: 14px;
+    color: #828282;
+} 
+
+.card-body .container .row .jml-kelas-tutor,
+.card-body .container .row .rating-tutor {
+    font-size: 12px;
+    color: #4F4F4F;
+    display: inline;
+}
+
+.rating-tutor .rating {
+    color: #E8C046;
+}
+
+/* end for css for card */
+
+/* css for list class */
+.card-body .container .row .nama-bidang{
+    font-size: 14px;
+    color: #828282;
+}
+
+.card-body .container .row .nama-kelas{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.card-body .container .row .harga-kelas {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F2C94C;
+}
+
+.card-body .container .row .diskon-kelas {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #828282;
+    text-decoration: line-through;
+}
+
+
+.card-body .container .row .waktu{
+    font-size: 12px;
+    color: #4F4F4F;
+    display: inline;
+}
+
+.card-body .container .row .jml-sub-bab{
+    font-size: 12px;
+    color: #4F4F4F;
+    display: inline;
+}
+
+.card-body .container .row .jml-pelanggan{
+    font-size: 12px;
+    color: #E8C046;
+    display: inline;
+}
+
+.card-body .container .row .waktu img{
+    margin-right: 5px;
+}
+
+.card-body .container .row .jml-sub-bab img{
+    margin-right: 5px;
+}
+
+.list-kelas-tutor .card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    opacity: 1;
+}
+
+.container .row .col a {
+    text-decoration: none !important;
+}
+
+.list-kelas-tutor .card .row {
+    margin-bottom: 8px;
+}
+
+.list-kelas-tutor .card {
+    margin: auto;
+    border-radius: 12px;
+    margin-bottom: 36px;
+    transition: box-shadow .4s, opacity .4s;
+    opacity: 0.9;
+}
+/* end css for list class */
+
+/* css for more button */
+
+.container-fluid .more-btn {
+    margin-top: 12px;
+    margin-bottom: 48px;
+    padding: 16px 32px;
+    width: 260px;
+    background: #602A82;
+    box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+    border-radius: 8px;
+    color: white;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    transition: opacity .2s;
+    border: 2px solid white;
+    transition: background 0.2s, border .2s, color .2s;
+}
+
+.container-fluid .more-btn:hover {
+    background: #FFFFFF;
+    border: 2px solid #602A82;
+    color: #602A82;
+}
+
+.container-fluid .col.col-btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* end css for more button */
+
+/* responsive css */
+@media only screen and (max-width: 991.98px) {
+    .card {
+        max-width: 100% !important;
+    }
+    .t-left .card .card-img-top {
+        height: 360px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .t-left {
+        height: 600px !important;
+    }
+    .sticky-card .col-12 {
+        padding-right: auto;
+        padding-left: auto;
+    }
+    .t-right-row {
+        padding-left: 15px; 
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .t-left .card {
+        width: 16rem; 
+        height: 410px;
+    }
+    .sticky-card .col-12 {
+        padding-left: 0; 
+        padding-right: auto;
+    }
+    .t-right-row {
+        padding-left: 40px; 
+        padding-right: 0px;
+    }
+}
+
+/* end for responsive css */

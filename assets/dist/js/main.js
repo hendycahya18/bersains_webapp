@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(".row.row-slider").slick({
     row: 0,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -49,5 +49,3 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
   });
 });
-
-AOS.init();

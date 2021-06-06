@@ -1,11 +1,18 @@
 .navbar {
     font-weight: 700;
     padding-top: 5px;
+    margin: auto;
 }
 
 .floatingNav {
     border-bottom: 2px solid;
     color: #E0E0E0;
+}
+
+.navbar .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1366px;
 }
 
 .navbar .container-fluid .navbar-nav .nav-item .nav-link.active{

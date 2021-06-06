@@ -1,8 +1,23 @@
 footer .container-fluid {
-    margin: 0;
     width: 100% !important;
     border-top: 1px solid #E0E0E0;
     margin-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer .row {
+    margin: auto;
+}
+
+footer .col-l .container {
+    max-width: 300px;
+    margin-right: 0;
+}
+
+footer .col-r .container {
+    max-width: 874px;
+    margin-left: 0;
 }
 
 footer .container-fluid .row-t {
