@@ -21,6 +21,7 @@ body {
 .title .container-fluid,
 .content .container-fluid {
     width: 90%;
+    max-width: 1366px;
 }
 
 .container {
