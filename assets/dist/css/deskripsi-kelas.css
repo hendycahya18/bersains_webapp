@@ -1,16 +1,420 @@
+/* template for txt */
+.txt-1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.txt-2 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.txt-3 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.txt-4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.txt-5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* end template for txt */
+
+/* template for button */
+.prim-btn {
+  background: #602A82;
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  border-radius: 8px;
+  color: white;
+  border: 2px solid #602A82;
+  transition: background .2s, border .2s, color .2s;
+}
+
+.prim-btn:hover {
+  background: #FFFFFF;
+  border: 2px solid #602A82;
+  color: #602A82;
+}
+
+.sec-btn {
+  background: #ffffff;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #602A82;
+  transition: box-shadow .2s;
+}
+
+.btn-active {
+  border: 1px solid #602A82 !important;
+}
+
+.sec-btn:hover {
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  color: #602A82;
+}
+
+/* end template for button */
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background:white;
-    font-size: 16px;
-    font-family: 'Mulish', Arial, Helvetica, sans-serif;
-    max-width: 1920px;
-    margin: auto;
+  background: white;
+  font-size: 16px;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  margin: auto;
 }
 
 .container-fluid {
-    width: 90%;
+  width: 90%;
 }
+
+/* header */
+.header {
+  background: #9d50bb;
+  background: -webkit-linear-gradient(to right, #6e48aa, #9d50bb);
+  background: linear-gradient(to right, #6e48aa, #9d50bb);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 48px;
+}
+
+.header .container-fluid {
+  max-width: 1366px !important;
+}
+
+.header .box {
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.box h1 {
+  margin-bottom: 16px;
+}
+
+.feature {
+  font-size: 20px;
+  color: white;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.feature div {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+
+.feature i {
+  color: white;
+}
+
+.feature p {
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+
+/* end for header */
+
+/* description */
+.class-description .container-fluid {
+  max-width: 1366px !important;
+  margin-bottom: 56px;
+}
+
+.menu-btns {
+  margin-left: -12px;
+  margin-right: -12px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.menu-btn {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  min-width: 170px !important;
+  height: 44px;
+  left: 112px;
+  top: 396px;
+  color: #4f4f4f;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.tentang,
+.materi,
+.testimoni {
+  margin-top: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.txt-title {
+  margin-bottom: 24px;
+}
+
+.txt-detail {
+  margin-bottom: 48px;
+}
+
+.main-content {
+  width: 200px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+}
+
+.main-contents {
+  margin-bottom: 24px;
+}
+
+.main-content p {
+  margin-top: 12px;
+}
+
+/* card tutor */
+.tentang .card-body .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tentang .card-body .container .row .col {
+  margin-top: 0px;
+}
+
+.tentang .card {
+  margin: auto;
+  border-radius: 12px;
+  margin-bottom: 36px;
+  transition: box-shadow 0.4s, opacity 0.4s;
+  opacity: 0.9;
+}
+
+.tentang .card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  opacity: 1;
+}
+
+.container .row a {
+  text-decoration: none !important;
+}
+
+.class-description .card .row {
+  margin-bottom: 8px;
+}
+
+.tentang .card .card-img-top {
+  border-radius: 12px 12px 0 0;
+}
+
+.tentang .card-body .container .row .nama-tutor {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.tentang .card-body .container .row .prestasi-tutor {
+  font-size: 14px;
+  color: #828282;
+}
+
+.tentang .card-body .container .row .jml-kelas-tutor,
+.tentang .card-body .container .row .rating-tutor {
+  font-size: 12px;
+  color: #4f4f4f;
+  display: inline;
+}
+
+.rating-tutor .rating {
+  color: #e8c046;
+}
+/* end for card tutor */
+
+/* materi */
+
+/* end for materi */
+/* end for description */
+
+/* sticky card */
+.sticky-card {
+  margin-top: -250px !important;
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 120px;
+}
+
+.sticky-card .card {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  border-radius: 12px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.sticky-card .card .card-img-top {
+  border-radius: 12px 12px 0 0;
+}
+
+.sticky-card .discount-price {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #F2C94C;
+  margin-right: 12px;
+}
+
+.sticky-card .price {
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration-line: line-through;
+  color: #828282;
+}
+
+.sticky-card .more-btn {
+  padding: 12px 16px;
+  width: 200px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sticky-card .card-body .row {
+  margin-bottom: 12px;
+}
+/* end for sticky card */
+
+/* other class */
+.other-class .container-fluid {
+  max-width: 1366px !important;
+  margin-bottom: 64px;
+}
+
+.other-class .row-slider .col-slider {
+  /* background: #b4b4b4; */
+  margin: 10px 0px;
+}
+
+.other-class a {
+  text-decoration: none;
+}
+
+.other-class .card {
+  margin: auto;
+  border-radius: 12px;
+  transition: box-shadow 0.4s, opacity 0.4s;
+  opacity: 0.9;
+}
+
+.other-class .card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  opacity: 1;
+}
+
+.other-class .card-body .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.other-class .card .card-img-top {
+  border-radius: 12px 12px 0 0;
+}
+
+.other-class .card-body .container .row .nama-bidang {
+  font-size: 14px;
+  color: #828282;
+}
+
+.other-class .card-body .container .row .nama-kelas {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.other-class .card-body .container .row .harga-kelas {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #f2c94c;
+}
+
+.other-class .card-body .container .row .diskon-kelas {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #828282;
+  text-decoration: line-through;
+}
+
+.other-class .card-body .container .row .waktu {
+  font-size: 12px;
+  color: #4f4f4f;
+}
+
+.other-class .card-body .container .row .jml-sub-bab {
+  font-size: 12px;
+  color: #4f4f4f;
+}
+
+.other-class .card-body .container .row .jml-pelanggan {
+  font-size: 12px;
+  color: #E8C046;
+}
+
+.other-class .card-body .container .row .waktu img {
+  margin-right: 5px;
+}
+
+.other-class .card-body .container .row .jml-sub-bab img {
+  margin-right: 5px;
+}
+
+.other-class .card-body .container .row .jml-pelanggan img {
+  margin-left: 5px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+}
+
+.slick-prev {
+  left: 5px;
+}
+.slick-next {
+  right: 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* end for other class */

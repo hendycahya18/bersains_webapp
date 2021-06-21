@@ -1,74 +1,1134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap to CSS -->
-    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
     <!-- CSS for Slick -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/dist/css/navbar-fixed.css">
-    <link rel="stylesheet" href="assets/dist/css/deskripsi-kelas.css">
-    <link rel="stylesheet" href="assets/dist/css/footer.css">
+    <link rel="stylesheet" href="assets/dist/css/navbar-fixed.css" />
+    <link rel="stylesheet" href="assets/dist/css/deskripsi-kelas.css" />
+    <link rel="stylesheet" href="assets/dist/css/footer.css" />
+    <!-- font awesome js -->
+    <script
+      src="https://kit.fontawesome.com/9494cca922.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- title -->
     <title>Besaran Mendasar dalam Astrofisika</title>
-</head>
-<body>
-     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" id="myNav">
-        <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/img/Logo.png" alt="" width="auto" height="70">
-          </a>
-          <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav align-items-center mr-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="katalog-kelas.html">Kelas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="katalog-to.html">Try Out</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tutor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tentang Kami</a>
-              </li>
-              <li class="nav-item">
-                <div class="vl"></div>
-              </li>
-              <li class="nav-item">
-                <a type="button" class="btn btn-masuk font-weight-bold" href="signin.html">Masuk</a>
-              </li>
-              <li class="nav-item">
-                <a type="button" class="btn btn-daftar font-weight-bold" href="signup.html">Daftar</a>
-              </li>
-            </ul>
-          </div>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      id="myNav"
+    >
+      <div class="container-fluid justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/Logo.png" alt="" width="auto" height="70" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center mr-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog-kelas.html">Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog-to.html">Try Out</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./list-tutor.html">Tutor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tentang-kami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <div class="vl"></div>
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-masuk font-weight-bold"
+                href="signin.html"
+                >Masuk</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-daftar font-weight-bold"
+                href="signup.html"
+                >Daftar</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- end for navbar -->
 
-    <div class="container">
-        <div class="row"></div>
+    <!-- header -->
+    <div class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-lg-9 col-12">
+            <div class="box">
+              <h1 class="txt-1 text-white">
+                Besaran Mendasar dalam Astrofisika
+              </h1>
+              <p class="txt-2 text-white">
+                Belajar ilmu kelatan yang paling laku dan kekinian. Zodiak.
+              </p>
+              <div class="feature d-flex flex-wrap">
+                <div class="time d-flex align-items-center">
+                  <i class="far fa-solid fa-clock"></i>
+                  <p class="txt-3">136 Menit (estimasi)</p>
+                </div>
+                <div class="sub-bab d-flex align-items-center">
+                  <i class="fas fa-book"></i>
+                  <p class="txt-3">11 Sub-bab</p>
+                </div>
+                <div class="rating d-flex align-items-center">
+                  <i class="fas fa-star" style="color: #e8c046 !important"></i>
+                  <p class="txt-3" style="color: #e8c046 !important">4,8</p>
+                  <p class="txt-3">(2089 murid)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- end for header -->
 
+    <!-- class description -->
+    <div class="class-description">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-xl-9 col-lg-8 col-12">
+            <div class="menu-btns d-flex">
+              <a
+                href="#"
+                class="
+                  btn
+                  sec-btn
+                  menu-btn
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  mt-1
+                  txt-4
+                  btn-active
+                "
+                >Tentang</a
+              >
+              <a
+                href="#"
+                class="
+                  btn
+                  sec-btn
+                  menu-btn
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  mt-1
+                  txt-4
+                "
+                >Materi</a
+              >
+              <a
+                href="#"
+                class="
+                  btn
+                  sec-btn
+                  menu-btn
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  mt-1
+                  txt-4
+                "
+                >Testimoni</a
+              >
+            </div>
+            <div class="container tentang">
+              <div class="row description">
+                <div class="col">
+                  <div class="row txt-5 txt-title">Deskripsi</div>
+                  <div class="row txt-2 txt-detail text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
+                    leo ipsum non ullamcorper ac vitae eu curabitur. Lorem
+                    mauris ultrices eget nunc nibh pharetra. Odio at egestas
+                    eget nunc. Praesent vitae pharetra, adipiscing fermentum
+                    netus tempus dignissim erat. Tortor pretium lacus, velit
+                    turpis nulla lectus. Viverra urna, pellentesque scelerisque
+                    vivamus nibh tristique. Ac egestas diam tortor condimentum.
+                    Et ultrices in nunc lacinia egestas rutrum. Morbi egestas
+                    tellus accumsan rutrum dictum lectus. Molestie aliquam
+                    felis, lorem quam. Nunc sit semper urna nisi, malesuada in
+                    vitae eget iaculis. Iaculis porta neque ultrices augue amet,
+                    ornare at adipiscing.
+                  </div>
+                </div>
+              </div>
+              <div class="row garis-besar">
+                <div class="col">
+                  <div class="row txt-5 txt-title">Garis Besar</div>
+                  <div class="row d-flex main-contents">
+                    <div
+                      class="main-content d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="./assets/img/Kelas/vector/jenis.png"
+                        alt=""
+                        width="24px;"
+                      />
+                      <p class="txt-2 text-center">
+                        Mempelajari tentang jenis-jenis zodiak
+                      </p>
+                    </div>
+                    <div
+                      class="main-content d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="./assets/img/Kelas/vector/jenis.png"
+                        alt=""
+                        width="24px;"
+                      />
+                      <p class="txt-2 text-center">
+                        Mempelajari tentang jenis-jenis zodiak
+                      </p>
+                    </div>
+                    <div
+                      class="main-content d-flex flex-column align-items-center"
+                    >
+                      <img
+                        src="./assets/img/Kelas/vector/jenis.png"
+                        alt=""
+                        width="24px;"
+                      />
+                      <p class="txt-2 text-center">
+                        Mempelajari tentang jenis-jenis zodiak
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row pembuat-materi txt-5 txt-title">
+                Pembuat Materi
+              </div>
+              <div class="row d-flex">
+                <div
+                  style="padding-left: 0; margin-left: 12px; margin-right: 12px"
+                >
+                  <a href="./deskripsi-tutor.html">
+                    <div class="card" style="width: 18rem; height: 460px">
+                      <img
+                        src="./assets/img/tutor/tutor_1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <div class="nama-tutor">
+                                Muhammad Hendy Riyadi Surjani
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-auto">
+                              <div class="prestasi-tutor">
+                                Honorable Mention at International Earth
+                                Symposium
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-5">
+                              <div class="jml-kelas-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/jml-kelas.svg"
+                                  alt=""
+                                />
+                                13 Kelas
+                              </div>
+                            </div>
+                            <div class="col col-7">
+                              <div class="rating-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/rating-kelas.svg"
+                                  alt=""
+                                />
+                                <span class="rating"> 4.8</span>
+                                <span> (1298 murid)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  style="padding-left: 0; margin-left: 12px; margin-right: 12px"
+                >
+                  <a href="./deskripsi-tutor.html">
+                    <div class="card" style="width: 18rem; height: 460px">
+                      <img
+                        src="./assets/img/tutor/tutor_1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <div class="nama-tutor">
+                                Muhammad Hendy Riyadi Surjani
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-auto">
+                              <div class="prestasi-tutor">
+                                Honorable Mention at International Earth
+                                Symposium
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-5">
+                              <div class="jml-kelas-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/jml-kelas.svg"
+                                  alt=""
+                                />
+                                13 Kelas
+                              </div>
+                            </div>
+                            <div class="col col-7">
+                              <div class="rating-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/rating-kelas.svg"
+                                  alt=""
+                                />
+                                <span class="rating"> 4.8</span>
+                                <span> (1298 murid)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  style="padding-left: 0; margin-left: 12px; margin-right: 12px"
+                >
+                  <a href="./deskripsi-tutor.html">
+                    <div class="card" style="width: 18rem; height: 460px">
+                      <img
+                        src="./assets/img/tutor/tutor_1.png"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <div class="nama-tutor">
+                                Muhammad Hendy Riyadi Surjani
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-auto">
+                              <div class="prestasi-tutor">
+                                Honorable Mention at International Earth
+                                Symposium
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col col-5">
+                              <div class="jml-kelas-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/jml-kelas.svg"
+                                  alt=""
+                                />
+                                13 Kelas
+                              </div>
+                            </div>
+                            <div class="col col-7">
+                              <div class="rating-tutor">
+                                <img
+                                  src="./assets/img/tutor/icon/rating-kelas.svg"
+                                  alt=""
+                                />
+                                <span class="rating"> 4.8</span>
+                                <span> (1298 murid)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container materi">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left txt-5"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Meramalkan Zodiak
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <a href="#" class="list-materi">
+                        Materi 1
+                      </a>
+                      <a href="#" class="list-materi">
+                        Materi 2
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Collapsible Group Item #2
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      Some placeholder content for the second accordion panel.
+                      This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Collapsible Group Item #3
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      And lastly, the placeholder content for the third and
+                      final accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container testimoni">
+              <div class="row description">a</div>
+              <div class="row garis-besar">a</div>
+              <div class="row pembuat-materi">a</div>
+            </div>
+          </div>
+          <div class="col col-xl-3 col-lg-4 col-12 pr-2">
+            <div class="sticky-card" style="padding-left: 0">
+              <div class="card" style="width: 250px; height: 460px">
+                <img
+                  src="./assets/img/Kelas/Thumbnail 3.svg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div
+                      class="row d-flex"
+                      style="
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 41px;
+                      "
+                    >
+                      <div class="discount-price">Rp45.000</div>
+                      <div class="price">Rp60.000</div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button
+                        type="button"
+                        class="btn more-btn prim-btn"
+                        style="font-weight: 700"
+                      >
+                        Gabung Kelas
+                      </button>
+                    </div>
+                    <div class="row justify-content-center">
+                      <button
+                        type="button"
+                        class="btn more-btn sec-btn"
+                        style="font-weight: 700"
+                      >
+                        Preview
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for class description -->
+
+    <!-- other class -->
+    <div class="other-class">
+      <div class="container-fluid">
+        <div class="row txt-5 txt-title">Kelas Serupa</div>
+        <div class="row row-slider">
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col col-slider">
+            <a href="./deskripsi-kelas.html">
+              <div class="card" style="width: 18rem; height: 470px">
+                <img
+                  src="./assets/img/Kelas/Kelas-1.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row" style="margin-bottom: 8px">
+                      <div class="col">
+                        <div class="nama-bidang">Astronomi</div>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 16px">
+                      <div class="col">
+                        <div class="nama-kelas">
+                          Besaran Mendasar dalam Astrofisika
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mx-n2" style="margin-bottom: 16px">
+                      <div class="col col-auto px-2 align-items-center">
+                        <div class="harga-kelas">Rp45.000</div>
+                      </div>
+                      <div class="col col-auto px-2">
+                        <div class="diskon-kelas">Rp60.000</div>
+                      </div>
+                    </div>
+                    <div
+                      class="
+                        row
+                        mx-n1
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div class="col col-auto px-1 my-0 text-left">
+                        <div
+                          class="waktu d-flex align-items-center"
+                          style="text-align: center"
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/waktu.png"
+                            alt=""
+                          />136 menit
+                        </div>
+                      </div>
+                      <div class="col col-5 px-1 my-0 text-center">
+                        <div
+                          class="
+                            jml-sub-bab
+                            d-flex
+                            align-items-center
+                            justify-content-center
+                          "
+                        >
+                          <img
+                            src="./assets/img/Kelas/vector/bab.png"
+                            alt=""
+                          />11 Sub-bab
+                        </div>
+                      </div>
+                      <div class="col col-auto px-1 my-0 text-right mr-0">
+                        <div class="jml-pelanggan d-flex align-items-center">
+                          4,8
+                          <img
+                            src="./assets/img/Kelas/vector/stars.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for other class -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row row-t">
+          <div class="col col-lg-4 col-md-12 col-sm-12 col-l">
+            <div class="container">
+              <div class="row">
+                <div class="col footer-name">Bersains Indonesia</div>
+              </div>
+              <div class="row">
+                <div class="col footer-alamat">
+                  Alamat <br />
+                  Griya Bogor Asri Jl. Camar no 4, Bubulak, Kec. Bogor Barat,
+                  Kota Bogor, Indonesia, 161165
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/facebook.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/instagram.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/twitter.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/youtube.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-8 col-md-12 col-12 col-r">
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-4 col-md-4 col-12 pb-lg-3 pb-2">
+                  Sainskan Indonesia Bersama Bersains
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-kelas.html">Kelas</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-to.html">Try Out</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./list-tutor.html">Tutor</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2"><a href="">FAQ</a></div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Tentang Kami</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Hubungi Kami</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-b">
+            ©Copyright Bersains Indonesia 2021 |
+            <a href="./terms.html">Terms</a> |
+            <a href="./privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- end for footer -->
     <script src="./assets/dist/js/jquery-3.5.1.slim.min.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="./assets/dist/js/navbar.js"></script>
     <script src="./assets/dist/js/main.js"></script>
-
-</body>
+  </body>
 </html>

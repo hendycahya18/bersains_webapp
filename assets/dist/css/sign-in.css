@@ -75,7 +75,6 @@ input[type="password"]:focus {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
-    outline: none !important;
 }
 
 .buttonPurple {
