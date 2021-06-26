@@ -30,33 +30,32 @@
 
 /* template for button */
 .prim-btn {
-  background: #602A82;
+  background: #602a82;
   box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
   border-radius: 8px;
   color: white;
-  border: 2px solid #602A82;
-  transition: background .2s, border .2s, color .2s;
+  border: 2px solid #602a82;
+  transition: background 0.2s, border 0.2s, color 0.2s;
 }
 
 .prim-btn:hover {
-  background: #FFFFFF;
-  border: 2px solid #602A82;
-  color: #602A82;
+  background: #ffffff;
+  border: 2px solid #602a82;
+  color: #602a82;
 }
 
 .sec-btn {
   background: #ffffff;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 8px;
-  color: #602A82;
-  transition: box-shadow .2s;
+  color: #602a82;
+  transition: box-shadow 0.2s;
 }
-
 
 .sec-btn:hover {
   box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
-  color: #602A82;
+  color: #602a82;
 }
 
 /* end template for button */
@@ -73,8 +72,26 @@ body {
   margin: auto;
 }
 
+.container {
+  width: 100% !important;
+}
+
 .container-fluid {
   width: 90%;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+  }
 }
 
 /* header */
@@ -156,10 +173,11 @@ body {
   border-radius: 8px !important;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  border: 1px solid #602A82 !important;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 1px solid #602a82 !important;
   background-color: white !important;
-  color: #4F4F4F;
+  color: #4f4f4f;
   box-shadow: none;
 }
 
@@ -271,7 +289,6 @@ body {
 
 .list-materi {
   padding: 6px 12px;
-  height: 40px;
 }
 
 .list-materi i {
@@ -289,8 +306,8 @@ body {
 }
 
 .testi-card {
-  background: #FFFFFF;
-  border: 1px solid #E0E0E0;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 12px;
   margin-bottom: 24px;
@@ -308,29 +325,26 @@ body {
 .profil-testi {
   padding-bottom: 16px;
   padding-top: 16px;
-  border-top: 1px solid #E0E0E0;
+  border-top: 1px solid #e0e0e0;
   padding-left: 24px;
 }
 
 .testi-name {
   font-weight: 600;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 .testi-sub-name {
   color: #828282;
 }
 
-
 /* end for testimoni */
 /* end for description */
 
 /* sticky card */
+
 .sticky-card {
-  margin-top: -250px !important;
-  position: -webkit-sticky !important; /* Safari */
-  position: sticky !important;
-  top: 120px;
+  margin-bottom: 64px;
 }
 
 .sticky-card .card {
@@ -348,7 +362,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
-  color: #F2C94C;
+  color: #f2c94c;
   margin-right: 12px;
 }
 
@@ -361,7 +375,6 @@ body {
 
 .sticky-card .more-btn {
   padding: 12px 16px;
-  width: 200px;
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -371,6 +384,28 @@ body {
 
 .sticky-card .card-body .row {
   margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 992px) {
+  .sticky-card {
+    margin-top: -250px !important;
+    position: -webkit-sticky !important; /* Safari */
+    position: sticky !important;
+    top: 120px;
+  }
+  .sticky-card .card {
+    width: 250px;
+    height: 460px;
+  }
+  .sticky-card .more-btn {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .sticky-card .more-btn {
+    width: 100%;
+  }
 }
 /* end for sticky card */
 
@@ -455,7 +490,7 @@ body {
 
 .other-class .card-body .container .row .jml-pelanggan {
   font-size: 12px;
-  color: #E8C046;
+  color: #e8c046;
 }
 
 .other-class .card-body .container .row .waktu img {
