@@ -53,9 +53,6 @@
   transition: box-shadow .2s;
 }
 
-.btn-active {
-  border: 1px solid #602A82 !important;
-}
 
 .sec-btn:hover {
   box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
@@ -155,6 +152,17 @@ body {
   border-radius: 8px;
 }
 
+.nav-link {
+  border-radius: 8px !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border: 1px solid #602A82 !important;
+  background-color: white !important;
+  color: #4F4F4F;
+  box-shadow: none;
+}
+
 .tentang,
 .materi,
 .testimoni {
@@ -248,8 +256,73 @@ body {
 /* end for card tutor */
 
 /* materi */
+.materi {
+  padding: 0;
+}
 
+.materi a {
+  text-decoration: none;
+}
+
+.accordion {
+  box-sizing: border-box;
+  border-radius: 12px !important;
+}
+
+.list-materi {
+  padding: 6px 12px;
+  height: 40px;
+}
+
+.list-materi i {
+  margin-right: 12px;
+}
+
+.list-materi a {
+  color: #333333;
+}
 /* end for materi */
+
+/* testimoni */
+.testimoni {
+  padding: 0;
+}
+
+.testi-card {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.testi {
+  text-align: justify;
+  padding: 40px 24px;
+}
+
+.testi p {
+  margin: 0;
+}
+
+.profil-testi {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #E0E0E0;
+  padding-left: 24px;
+}
+
+.testi-name {
+  font-weight: 600;
+  color: #4F4F4F;
+}
+
+.testi-sub-name {
+  color: #828282;
+}
+
+
+/* end for testimoni */
 /* end for description */
 
 /* sticky card */
