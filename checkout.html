@@ -1,12 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1366px, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap to CSS -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/dist/css/navbar-fixed.css" />
+    <link rel="stylesheet" href="assets/dist/css/checkout.css" />
+    <link rel="stylesheet" href="assets/dist/css/footer.css" />
+    <!-- font awesome js -->
+    <script
+      src="https://kit.fontawesome.com/9494cca922.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Checkout</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="text" placeholder="Masukkan Kode Referral">
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn sec-btn txt-4"
+              data-dismiss="modal"
+            >
+              Keluar
+            </button>
+            <button type="button" class="btn prim-btn txt-4">Selesai</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for modal -->
+    <!-- navbar -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
+      id="myNav"
+    >
+      <div class="container-fluid justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/Logo.png" alt="" width="auto" height="70" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center mr-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog-kelas.html">Kelas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog-to.html">Try Out</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./list-tutor.html">Tutor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tentang-kami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <div class="vl"></div>
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-masuk font-weight-bold"
+                href="signin.html"
+                >Masuk</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                type="button"
+                class="btn btn-daftar font-weight-bold"
+                href="signup.html"
+                >Daftar</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end for navbar --
+      >
+    <!-- checkout title -->
+    <div class="container title">
+      <div class="row justify-content-center">
+        <div class="d-flex flex-column text-center" style="max-width: 560px">
+          <div class="txt-1">Checkout Kelas</div>
+          <div class="txt-2 txt-grey-2">
+            Bergabung dengan kelas kami dan dapatkan materi terbaik dari mereka
+            yang berpengalaman
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for checkout title -->
+
+    <!-- checkout detail -->
+    <div class="container detail">
+      <div class="row justify-content-between">
+        <div class="col col-lg-3 col-12 pl-lg-0">
+          <div class="card">
+            <img
+              src="./assets/img/tutor/tutor_1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="nama-tutor">Muhammad Hendy Riyadi Surjani</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-auto">
+                    <div class="prestasi-tutor">Tutor Kebumian</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-5">
+                    <div class="jml-kelas-tutor">
+                      <img src="./assets/img/tutor/icon/jml-kelas.svg" alt="" />
+                      13 Kelas
+                    </div>
+                  </div>
+                  <div class="col col-7">
+                    <div class="rating-tutor">
+                      <img
+                        src="./assets/img/tutor/icon/rating-kelas.svg"
+                        alt=""
+                      />
+                      <span class="rating"> 4.8</span>
+                      <span> (1298 murid)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-9 col-12 pr-lg-0">
+          <div class="checkout-data text-justify">
+            <div class="row">
+              <p class="col col-l txt-2">
+                Kelas Astronomi bab Besaran Mendasar dalam Astrofisika
+              </p>
+              <p class="col col-r txt-2">Rp60.000.000</p>
+            </div>
+            <div class="row">
+              <p class="col col-l txt-2">Kode pembelian</p>
+              <p class="col col-r txt-2">-Rp123</p>
+            </div>
+            <div class="row">
+              <p class="col col-l txt-2">Potongan</p>
+              <p class="col col-r txt-2">-Rp15.000</p>
+            </div>
+            <hr class="row" />
+            <div class="row">
+              <p class="col col-l txt-2">Kode Referral</p>
+              <p class="col col-m txt-4 text-truncate">
+                <a href="" class="input-referral" data-toggle="modal" data-target="#exampleModal">Masukkan Kode Referral</a>
+              </p>
+              <p class="col col-r txt-2">-</p>
+            </div>
+            <hr class="row" />
+            <div class="row justify-content-end">
+              <div class="total-payment d-flex justify-content-between">
+                <p class="txt-2">Total transfer</p>
+                <p class="txt-4">Rp44.877</p>
+              </div>
+            </div>
+            <div class="row d-flex flex-column" style="margin-bottom: 48px">
+              <p class="txt-2 txt-grey-3">
+                Silakan transfer pembayaran kepada rekening berikut
+              </p>
+              <div class="d-flex flex-row align-items-center">
+                <img
+                  src="./assets/img/checkout/BCA 1.svg"
+                  alt=""
+                  class="bank-img"
+                />
+                <div class="detail-bank d-flex flex-column">
+                  <p class="txt-2">a/n Iqmal Riyadi</p>
+                  <p class="txt-4">3972816410 <i class="far fa-copy"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <a
+                type="button"
+                class="btn checkout-btn prim-btn txt-4"
+                href="./checkout.html"
+                style="margin-bottom: 24px"
+              >
+                Konfirmasi Pembayaran
+              </a>
+              <a
+                type="button"
+                class="btn checkout-btn sec-btn txt-4"
+                href="./checkout.html"
+              >
+                Lihat Jam Operasional
+              </a>
+            </div>
+          </div>
+          <div class="important-info text-justify">
+            <div style="margin-bottom: 48px">
+              <p class="txt-5 txt-grey-1">Info Penting</p>
+              <p class="txt-2">
+                Mohon transfer uang sesuai dengan nominal yang tertera sampai 3
+                digit terakhir. Tellus sed neque, id donec. Ullamcorper euismod
+                fames odio sit orci. Auctor viverra risus, ac sed lectus id
+                porttitor massa imperdiet. Augue quam ac eu phasellus. Ipsum
+                proin morbi adipiscing bibendum. Velit nec ac, ultricies risus
+                nunc ornare nullam. Sed venenatis velit turpis tristique orci
+                cum leo id non. Tristique orci duis eleifend et nunc.
+                <br /><br />
+                Et nullam id scelerisque dui, at sodales imperdiet interdum
+                consectetur. Nunc turpis sagittis vitae cursus placerat orci
+                lobortis. Duis nunc adipiscing neque diam. Egestas lectus
+                aliquam facilisi porta sit porttitor. Nisl massa egestas vel
+                malesuada. Nullam nunc, in id ut volutpat at ac ut nec. Orci,
+                nulla volutpat tincidunt nec imperdiet nibh aliquet. Lectus mi
+                lorem sociis eget vestibulum. Lorem maecenas aenean sed interdum
+                massa eleifend. Ligula facilisis vitae nisl in vitae. Egestas
+                cursus nibh quisque id amet. Porta gravida non orci a neque id
+                gravida pharetra adipiscing. Arcu est et gravida platea.
+              </p>
+            </div>
+            <div>
+              <p class="txt-5 txt-grey-1">Narahubung</p>
+              <div class="d-flex flex-column mb-4">
+                <p class="txt-2 txt-grey-3 m-0">Syukron</p>
+                <p class="txt-2 m-0">08918264510</p>
+              </div>
+              <div>
+                <p class="txt-2 txt-grey-3 m-0">Alexandra</p>
+                <p class="txt-2 m-0">08918264510</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for checkout detail -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row row-t">
+          <div class="col col-lg-4 col-md-12 col-sm-12 col-l">
+            <div class="container">
+              <div class="row">
+                <div class="col footer-name">Bersains Indonesia</div>
+              </div>
+              <div class="row">
+                <div class="col footer-alamat">
+                  Alamat <br />
+                  Griya Bogor Asri Jl. Camar no 4, Bubulak, Kec. Bogor Barat,
+                  Kota Bogor, Indonesia, 161165
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/facebook.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/instagram.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/twitter.png" alt=""
+                  /></a>
+                </div>
+                <div class="col col-1">
+                  <a href="#"
+                    ><img src="./assets/img/Kelas/vector/youtube.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-8 col-md-12 col-12 col-r">
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-4 col-md-4 col-12 pb-lg-3 pb-2">
+                  Sainskan Indonesia Bersama Bersains
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-kelas.html">Kelas</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./katalog-to.html">Try Out</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="./list-tutor.html">Tutor</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-3 col-md-3 col-12">
+                  <div class="container">
+                    <div class="row pb-lg-3 pb-2"><a href="">FAQ</a></div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Tentang Kami</a>
+                    </div>
+                    <div class="row pb-lg-3 pb-2">
+                      <a href="">Hubungi Kami</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-b">
+            ©Copyright Bersains Indonesia 2021 |
+            <a href="./terms.html">Terms</a> |
+            <a href="./privacy.html">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end for footer -->
+    <script src="./assets/dist/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./assets/dist/js/navbar.js"></script>
+  </body>
 </html>

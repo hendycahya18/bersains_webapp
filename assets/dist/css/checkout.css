@@ -1,0 +1,302 @@
+/* border */
+/* 
+.row,
+.icon-box {
+  border: 1px solid red;
+}
+.col,
+.fitur-fitur,
+.fitur-fitur img,
+.fitur-fitur h1,
+.fitur-fitur p {
+  border: 1px solid blue;
+} */
+
+/* end for border */
+
+/* template for txt */
+.txt-1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.txt-2 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.txt-3 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.txt-4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.txt-5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.txt-grey-1 {
+  color: #333333;
+}
+
+.txt-grey-2 {
+  color: #4f4f4f;
+}
+
+.txt-grey-3 {
+    color: #828282;
+}
+
+/* end template for txt */
+
+/* template for button */
+.prim-btn {
+  background: #602a82;
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+}
+
+.prim-btn:hover {
+  background: #ffffff;
+  border: 2px solid #602a82;
+  color: #602a82;
+}
+
+.sec-btn {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #602a82;
+  transition: box-shadow 0.2s;
+}
+
+.sec-btn:hover {
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  color: #602a82;
+}
+
+/* end template for button */
+
+/* modal */
+.modal-dialog {
+  max-width: 550px !important;
+  margin: auto;
+}
+
+.modal-content {
+  border-radius: 12px;
+  padding: 12px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.modal-body .form-control {
+  padding: 12px 16px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.modal-body .form-control:focus {
+  border: 1px solid #2D9CDB;
+}
+
+.modal-footer {
+  border-top: 0;
+}
+
+.modal-footer .prim-btn {
+  padding: 12px 16px;
+  width: 170px;
+}
+
+.modal-footer .sec-btn {
+  padding: 12px 16px;
+  width: 170px;
+}
+/* end for modal */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-size: 16px;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  margin: auto;
+  color: #333333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1366px !important;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+/* checkout title */
+.title {
+  margin-top: 64px;
+}
+
+.title .txt-1 {
+  margin-bottom: 16px;
+}
+
+/* end for checkout title */
+
+/* checkout detail */
+.detail {
+  margin-top: 64px;
+}
+
+.checkout-data {
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  padding: 32px;
+}
+.checkout-data .col-l {
+  padding-left: 0;
+  text-align: left;
+}
+
+.checkout-data .col-m {
+  text-align: left;
+}
+
+.checkout-data .col-r {
+  padding-right: 0;
+  text-align: right;
+  max-width: 200px;
+}
+
+.important-info {
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.txt-4 a {
+  text-decoration: none;
+}
+
+.txt-4 a:hover {
+  color: #602A82;
+}
+
+hr {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.input-referral {
+  color: #602A82;
+}
+.total-payment {
+  padding: 16px 24px 16px 16px;
+  width: 300px;
+  left: 954px;
+  top: 604px;
+  background: rgba(45, 156, 219, 0.08);
+  border-radius: 8px 0px 0px 8px;
+  margin-right: -18px;
+  margin-top: 17px;
+  margin-bottom: 32px;
+}
+
+.total-payment p {
+  margin-bottom: 0;
+}
+
+.detail-bank {
+  margin-left: 16px;
+}
+
+.detail-bank p {
+  margin-bottom: 0;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 16px;
+}
+/* end checkout detail */
+
+/* responsive */
+@media (max-width:575.98px) {
+  .txt-1 {
+    font-size: 28px;
+  }
+  .txt-2 {
+    font-size: 12px;
+  }
+  .txt-3 {
+    font-size: 10px !important;
+  }
+  .txt-4 {
+    font-size: 12px;
+  }
+  .txt-5 {
+    font-size: 16px;
+  }
+  /* modal */
+  .modal-dialog {
+    max-width: 300px !important;
+  }
+  .modal-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-footer .prim-btn,
+  .modal-footer .sec-btn {
+    width: 100%;
+  }
+  /* end for modal */
+  .checkout-data .col-r {
+    max-width: 100px;
+  }
+  .total-payment {
+    width: 240px;
+  }
+  .bank-img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .checkout-data .col-r {
+    max-width: 150px;
+  }
+}
+
+/* end for responsive */

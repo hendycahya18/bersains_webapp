@@ -59,6 +59,7 @@ body {
     position: relative;
     height: 52px !important;
     margin-bottom: 16px;
+    border-radius: 8px;
 }
 
 .container .search .search-btn {
