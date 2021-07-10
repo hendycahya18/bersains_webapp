@@ -22,10 +22,10 @@
     <title>Checkout</title>
   </head>
   <body>
-    <!-- Modal -->
+    <!-- Modal Referral-->
     <div
-      class="modal fade"
-      id="exampleModal"
+      class="modal referral"
+      id="inputReferral"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -33,10 +33,14 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Kode Referral</h5>
           </div>
           <div class="modal-body">
-            <input class="form-control" type="text" placeholder="Masukkan Kode Referral">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Masukkan Kode Referral"
+            />
           </div>
           <div class="modal-footer">
             <button
@@ -46,12 +50,167 @@
             >
               Keluar
             </button>
-            <button type="button" class="btn prim-btn txt-4">Selesai</button>
+            <button type="button" class="btn reg-btn txt-4">Selesai</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- end for modal -->
+    <!-- end for modal referral-->
+
+    <!-- modal konfirmasi pembayaran -->
+    <div
+      class="modal payment-confirmation"
+      id="paymentConfirmation"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <img src="./assets/img/checkout/Warn.svg" alt="" />
+          </div>
+          <div class="modal-body">
+            <p class="txt-5 text-center m-0">
+              Apakah Anda sudah melakukan pembayaran?
+            </p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn sec-btn txt-4"
+              data-dismiss="modal"
+            >
+              Belum
+            </button>
+            <button
+              type="button"
+              class="btn reg-btn txt-4"
+              data-toggle="modal"
+              data-target="#paymentUpload"
+              data-dismiss="modal"
+            >
+              Sudah
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for modal konfirmasi pembayaran -->
+
+    <!-- modal payment upload -->
+    <div
+      class="modal payment-upload"
+      id="paymentUpload"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header d-block">
+            <p class="txt-5 text-center">Unggah Bukti Pembayaran</p>
+            <p class="txt-6 text-center m-0">
+              Format file JPG, PNG, atau PDF. Ukuran maksimal 1 mb.
+            </p>
+          </div>
+          <div class="modal-body">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile" />
+              <label
+                class="
+                  upload-label
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  m-0
+                "
+                for="customFile"
+              >
+                <p class="txt-4 text-center m-0">
+                  Drop file here or click to upload.
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn sec-btn txt-4"
+              data-dismiss="modal"
+            >
+              Kembali
+            </button>
+            <button
+              type="button"
+              class="btn reg-btn txt-4"
+              data-toggle="modal"
+              data-target="#uploadSuccess"
+              data-dismiss="modal"
+            >
+              Kirim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for modal payment upload -->
+
+    <!-- modal upload succes -->
+    <div
+      class="modal upload-success"
+      id="uploadSuccess"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header align-items-center">
+            <img
+              src="./assets/img/checkout/Group 227.svg"
+              alt=""
+              class="success-icon"
+            />
+            <div class="d-flex flex-column">
+              <p class="txt-5">File berhasil diupload</p>
+              <p class="txt-2 mb-0">
+                Proses pengecekan akan dilakukan pada jam operasional. Mohon
+                sabar menunggu dan terima kasih.
+              </p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="modal-body">
+            <p class="txt-2">
+              Jika dalam 3×24 jam pembayaran belum juga terkonfirmasi silakan
+              hubungi narahubung yang tersedia.
+            </p>
+            <div class="d-flex flex-row">
+              <div class="d-flex flex-column col-l">
+                <p class="txt-2">Tanggal pembayaran</p>
+                <p class="txt-4 m-0">5 november 2020</p>
+              </div>
+              <div class="d-flex flex-column col-r">
+                <p class="txt-2">Jam pembayaran</p>
+                <p class="txt-4 m-0">21.48</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer p-0">
+            <button
+              type="button"
+              class="btn reg-btn txt-4"
+              data-dismiss="modal"
+            >
+              Oke
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end for modal upload success -->
+
     <!-- navbar -->
     <nav
       class="navbar sticky-top navbar-expand-lg navbar-light bg-white"
@@ -112,8 +271,8 @@
         </div>
       </div>
     </nav>
-    <!-- end for navbar --
-      >
+    <!-- end for navbar -->
+
     <!-- checkout title -->
     <div class="container title">
       <div class="row justify-content-center">
@@ -140,31 +299,68 @@
             />
             <div class="card-body">
               <div class="container">
-                <div class="row">
+                <div class="row" style="margin-bottom: 8px">
                   <div class="col">
-                    <div class="nama-tutor">Muhammad Hendy Riyadi Surjani</div>
+                    <div class="nama-bidang txt-6">Astronomi</div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col col-auto">
-                    <div class="prestasi-tutor">Tutor Kebumian</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col col-5">
-                    <div class="jml-kelas-tutor">
-                      <img src="./assets/img/tutor/icon/jml-kelas.svg" alt="" />
-                      13 Kelas
+                <div class="row" style="margin-bottom: 16px">
+                  <div class="col">
+                    <div class="nama-kelas txt-5">
+                      Besaran Mendasar dalam Astrofisika
                     </div>
                   </div>
-                  <div class="col col-7">
-                    <div class="rating-tutor">
+                </div>
+                <div class="row mx-n2" style="margin-bottom: 16px">
+                  <div class="col col-auto px-2 align-items-center">
+                    <div class="harga-kelas txt-7">Rp45.000</div>
+                  </div>
+                  <div class="col col-auto px-2">
+                    <div class="diskon-kelas txt-6">Rp60.000</div>
+                  </div>
+                </div>
+                <div
+                  class="
+                    row
+                    mx-n1
+                    justify-content-between
+                    align-items-center
+                    txt-8
+                  "
+                >
+                  <div class="col col-auto px-1 my-0 text-left">
+                    <div
+                      class="waktu d-flex align-items-center pb-2"
+                      style="text-align: center"
+                    >
                       <img
-                        src="./assets/img/tutor/icon/rating-kelas.svg"
+                        src="./assets/img/Kelas/vector/waktu.png"
+                        alt=""
+                      />136 menit
+                    </div>
+                  </div>
+                  <div class="col col-5 px-1 my-0 text-center pb-2">
+                    <div
+                      class="
+                        jml-sub-bab
+                        d-flex
+                        align-items-center
+                        justify-content-center
+                      "
+                    >
+                      <img
+                        src="./assets/img/Kelas/vector/bab.png"
+                        alt=""
+                      />11 Sub-bab
+                    </div>
+                  </div>
+                  <div class="col col-auto px-1 my-0 text-right mr-0 pb-2">
+                    <div class="jml-pelanggan d-flex align-items-center">
+                      4,8
+                      <img
+                        src="./assets/img/Kelas/vector/stars.png"
                         alt=""
                       />
-                      <span class="rating"> 4.8</span>
-                      <span> (1298 murid)</span>
                     </div>
                   </div>
                 </div>
@@ -192,7 +388,20 @@
             <div class="row">
               <p class="col col-l txt-2">Kode Referral</p>
               <p class="col col-m txt-4 text-truncate">
-                <a href="" class="input-referral" data-toggle="modal" data-target="#exampleModal">Masukkan Kode Referral</a>
+                <a
+                  href=""
+                  class="input-referral"
+                  data-toggle="modal"
+                  data-target="#inputReferral"
+                  >Masukkan Kode Referral</a
+                >
+                <a
+                  href=""
+                  class="input-referral-2"
+                  data-toggle="modal"
+                  data-target="#inputReferral"
+                  >Referral</a
+                >
               </p>
               <p class="col col-r txt-2">-</p>
             </div>
@@ -222,9 +431,11 @@
             <div class="row">
               <a
                 type="button"
-                class="btn checkout-btn prim-btn txt-4"
+                class="btn checkout-btn reg-btn txt-4"
                 href="./checkout.html"
                 style="margin-bottom: 24px"
+                data-toggle="modal"
+                data-target="#paymentConfirmation"
               >
                 Konfirmasi Pembayaran
               </a>
