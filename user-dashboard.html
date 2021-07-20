@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- font-family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>Dashboard</title>
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/dist/css/sb-sidebar.css" rel="stylesheet" />
+    <link href="./assets/dist/css/user-dashboard.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- script -->
+    <script
+      src="https://kit.fontawesome.com/9494cca922.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="sb-nav-fixed">
+    <nav
+      class="
+        top-navbar
+        navbar navbar-expand navbar-light
+        bg-light
+        justify-content-end
+      "
+      style="height: 80px"
+    >
+      <button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-4"
+        id="sidebarToggle"
+        href="#!"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <div id="layoutSidenav_nav">
+        <nav
+          class="sb-sidenav accordion sb-sidenav-light"
+          id="sidenavAccordion"
+        >
+          <div class="sb-sidenav-menu">
+            <div class="nav">
+              <a
+                class="title d-flex flex-row align-items-center"
+                aria-current="page"
+                href="#"
+              >
+                <p class="mb-0">Bersains</p></a
+              >
+              <a
+                class="nav-link active d-flex flex-row align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="las la-home" style="font-size: 28px"></i>
+                <p class="gap"></p>
+                <p class="txt-7 mb-0">Beranda</p>
+              </a>
+              <a
+                class="nav-link d-flex flex-row align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="las la-book" style="font-size: 28px"></i>
+                <p class="gap"></p>
+                <p class="txt-7 mb-0">Kelas Saya</p>
+              </a>
+              <a
+                class="nav-link d-flex flex-row align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="lar la-edit" style="font-size: 28px"></i>
+                <p class="gap"></p>
+                <p class="txt-7 mb-0">Try Out Saya</p>
+              </a>
+              <a
+                class="nav-link d-flex flex-row align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="lar la-bell" style="font-size: 28px"></i>
+                <p class="gap"></p>
+                <p class="txt-7 mb-0">Notifikasi</p>
+              </a>
+              <a
+                class="nav-link d-flex flex-row align-items-center"
+                aria-current="page"
+                href="index.html"
+              >
+                <i class="las la-cog" style="font-size: 28px"></i>
+                <p class="gap"></p>
+                <p class="txt-7 mb-0">Pengaturan</p>
+              </a>
+            </div>
+          </div>
+          <div class="account">
+            <div class="btn-group dropup">
+              <a
+                type="button"
+                class="
+                  btn
+                  dropdown-toggle
+                  d-flex
+                  flex-row
+                  align-items-center
+                  p-0
+                "
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                <img src="./assets/img/Kelas/account.svg" alt="" />
+                <p class="txt-4 text-grey-1 mb-0">Hendy Cahya</p>
+              </a>
+              <ul
+                class="
+                  dropdown-menu dropdown-menu-end dropdown-menu-lg-start
+                  animate
+                  slideIn
+                "
+              >
+                <li>
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      flex-row
+                      align-items-center
+                      justify-content-between
+                      txt-grey-1
+                    "
+                    href="#"
+                  >
+                    <p class="txt-2 mb-0">Dashboard</p>
+                    <p class="gap"></p>
+                    <i class="las la-home" style="font-size: 20px"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      flex-row
+                      align-items-center
+                      justify-content-between
+                      txt-grey-1
+                    "
+                    href="#"
+                  >
+                    <p class="txt-2 mb-0">Edit Profil</p>
+                    <p class="gap"></p>
+                    <i class="las la-edit" style="font-size: 20px"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      flex-row
+                      align-items-center
+                      justify-content-between
+                      txt-grey-1
+                    "
+                    href="#"
+                  >
+                    <p class="txt-2 mb-0">Bantuan</p>
+                    <p class="gap"></p>
+                    <i
+                      class="las la-question-circle"
+                      style="font-size: 20px"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="
+                      dropdown-item
+                      d-flex
+                      flex-row
+                      align-items-center
+                      justify-content-between
+                      txt-grey-1
+                    "
+                    href="#"
+                  >
+                    <p class="txt-2 mb-0">Keluar</p>
+                    <p class="gap"></p>
+                    <i class="las la-sign-out-alt" style="font-size: 20px"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4" style="text-align: justify;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Recusandae, repellat est neque praesentium culpa repudiandae ratione
+            ipsam tempore, quo vitae, ipsum deleniti nam porro! Soluta commodi
+            distinctio itaque reiciendis cupiditate veniam nostrum? Perspiciatis
+            eos quos nobis ratione aperiam vitae laborum nulla id non, quaerat a
+            sit excepturi temporibus unde aspernatur sapiente dicta quo quam
+            veritatis possimus consequuntur exercitationem corporis. Adipisci ut
+            facere fugiat optio! Magni praesentium doloribus cum. Maxime est
+            illum magni, porro error harum possimus. Pariatur dicta cumque ex
+            quaerat incidunt aut blanditiis eaque, adipisci consequuntur
+            possimus aliquam soluta, dignissimos suscipit odio saepe a sed
+            consectetur distinctio. Nobis dolorum delectus est id quibusdam
+            voluptas perspiciatis, aspernatur corporis ipsam soluta eaque,
+            molestias ducimus placeat vero unde cupiditate enim, ullam molestiae
+            minima! Cumque inventore, voluptatem, quae provident ratione
+            mollitia commodi nesciunt distinctio ut quia voluptate? Quae
+            necessitatibus deserunt asperiores nesciunt quasi at nostrum tempore
+            harum rerum aut, animi dolorum recusandae, hic eveniet, ea officiis
+            ab vitae eos quo omnis dolor doloribus consequatur autem nulla!
+            Consequuntur, labore. Repellat error quisquam sint facilis neque
+            ullam dolore maiores, officiis recusandae quae aperiam, dignissimos
+            ipsam totam minima a, quia quas maxime nemo laborum quidem non ipsum
+            magni veniam? Optio qui doloribus eos pariatur aspernatur nulla
+            quaerat laboriosam id repellendus praesentium nesciunt repellat
+            facilis consequuntur alias voluptatem mollitia tenetur est sunt nemo
+            aliquam, porro soluta reprehenderit? Cupiditate voluptatibus nam
+            officia provident saepe, nobis iste molestias perferendis soluta
+            beatae quia quasi consequatur suscipit, labore in tenetur magnam
+            unde enim quod necessitatibus et ipsam! Voluptates, consequuntur
+            distinctio voluptas quaerat cum magnam? Sapiente soluta nam quos cum
+            veritatis dolor perferendis autem eveniet unde molestiae? Libero
+            atque cum qui numquam obcaecati iure maxime fuga. Ipsum esse ipsa
+            omnis, dolores eum eos ad iusto placeat molestiae ut ullam harum
+            animi autem nemo molestias est culpa expedita ex, vitae nihil
+            sapiente quos, amet repudiandae a. Dolore nulla consequatur porro,
+            repudiandae explicabo enim placeat? Odit natus nesciunt quis
+            repellendus dicta iure eveniet reprehenderit incidunt ipsum
+            excepturi unde dolorem delectus, vel officiis molestiae explicabo?
+            Dolorem veritatis magnam, magni nobis cumque in, vitae vel dolorum
+            possimus expedita eius enim tenetur at quisquam nesciunt
+            praesentium? Labore excepturi molestias, a aspernatur doloremque
+            expedita debitis vel, quis nulla distinctio magni eligendi quod
+            explicabo vero rem hic facilis animi? Aspernatur, beatae ratione.
+            Veritatis vitae quae assumenda iure laborum incidunt molestias
+            architecto aliquid non? Veritatis laborum nostrum eveniet velit
+            illum reprehenderit, aut porro itaque earum quidem quis delectus
+            fugiat, exercitationem quae temporibus dolore ullam magnam! Harum,
+            magnam ipsum sed aut ipsa laudantium repellat a rem, ut voluptas quo
+            repellendus! Tenetur mollitia quasi laudantium odio assumenda minima
+            ad error porro iure, atque adipisci ea corrupti earum dolore quos
+            beatae ratione similique vero aliquam quaerat exercitationem.
+            Reprehenderit voluptates dignissimos voluptate natus dolorem
+            officiis vel laborum, nesciunt, sed, corrupti delectus reiciendis
+            perspiciatis laudantium laboriosam consequuntur eaque amet quod odio
+            quia quaerat dolore optio? Nemo mollitia eveniet placeat, quo sit
+            cupiditate id dolorem ipsam. Facilis quod totam dolorum libero non,
+            iste possimus dicta sed quo pariatur laboriosam aperiam cumque nemo
+            a quasi voluptate. Ab cum omnis iste facilis saepe sit rem hic ullam
+            ex ducimus recusandae est atque quaerat, cumque corrupti ea.
+            Molestias, id praesentium est dicta voluptas dolorum quasi sapiente
+            libero repellat, incidunt impedit quidem asperiores magnam eveniet,
+            tenetur perspiciatis? Consectetur, sunt omnis. Exercitationem, quia
+            delectus? Fugit quisquam quos voluptatum facilis ratione nobis
+            facere, impedit rerum molestias atque incidunt corporis vero
+            excepturi nemo provident sint laborum tenetur dolor sunt laudantium
+            perspiciatis id adipisci doloremque labore. Aliquam, saepe
+            laudantium inventore, dignissimos sit beatae minima dolorem facilis
+            accusamus maxime possimus cupiditate iure harum iusto molestiae
+            doloribus voluptatum odio voluptas optio! Explicabo eveniet, sed
+            earum distinctio suscipit maiores sapiente maxime enim dolor. Enim
+            voluptas quam similique molestiae unde fugit explicabo sunt quis
+            quos, minima sed quasi quidem, tenetur tempora corrupti fugiat
+            reiciendis quas alias, vitae exercitationem? Fugit tenetur minus
+            laboriosam, quos molestias dolorum sunt, doloribus qui est odit
+            minima? Vel earum quam velit nihil illo iure, beatae provident
+            ducimus quisquam magni, esse in aspernatur architecto maxime, autem
+            veritatis id dolore. Consequuntur ad atque veniam unde, ipsam quis,
+            magni nostrum dolore soluta ducimus quos asperiores fugit eveniet
+            quae fuga eum porro! Ipsa explicabo optio tenetur accusantium
+            doloremque delectus omnis nihil perferendis perspiciatis dolorem.
+            Doloribus, beatae? Quidem consequatur inventore dignissimos dolores
+            ex molestias odit delectus, nihil nesciunt ratione officia, nisi
+            perferendis! Explicabo nisi, eveniet officiis consequuntur
+            temporibus cupiditate mollitia! Neque, maiores enim inventore natus,
+            molestiae aut eos fugit vitae quidem recusandae exercitationem
+            aliquam quod laboriosam voluptates, suscipit rem dolorum debitis id
+            vel! Quod fugiat excepturi voluptate, culpa dolorum placeat sint
+            praesentium vitae non consectetur labore a odit maiores, laborum
+            quidem commodi. Explicabo ipsum laboriosam assumenda atque suscipit
+            praesentium dicta voluptate doloremque culpa aliquam mollitia
+            laborum id sequi fugiat cum voluptas repudiandae neque at unde illo
+            necessitatibus veniam, ex harum eum? Mollitia dolorum consequatur
+            nesciunt eum magni fugiat provident tempora, vel ipsam eligendi
+            atque rerum molestiae nostrum iusto numquam? Doloribus recusandae
+            excepturi ratione provident eius, voluptatibus qui dolores neque
+            minima commodi. Eos eligendi unde esse, quisquam minus distinctio
+            voluptatum. Pariatur molestias nesciunt blanditiis quas recusandae
+            id reprehenderit atque in assumenda exercitationem temporibus
+            veniam, culpa reiciendis omnis praesentium ullam qui vero ut dicta
+            perspiciatis autem? Eum provident vero quod mollitia illo ullam
+            repellendus quaerat adipisci voluptatibus dolorum. Cumque tempora
+            illo accusamus incidunt sed autem ullam ex, totam culpa nihil
+            aliquid, ad molestiae ipsam numquam libero accusantium, excepturi
+            nostrum corrupti et dignissimos laudantium magnam voluptas. Natus
+            iure adipisci sed velit eveniet consequuntur necessitatibus repellat
+            eum suscipit, praesentium, ullam maxime qui libero assumenda optio
+            iusto quas soluta nostrum voluptas quos, corporis doloribus pariatur
+            repellendus distinctio. Sint nostrum eum iste a eveniet, error earum
+            non ratione nulla nesciunt ab deleniti, sit eaque provident enim
+            quas saepe et ut eius facere fuga doloremque consectetur adipisci.
+            Soluta, hic? Ipsa dolores voluptatum sint accusantium ea blanditiis
+            adipisci aliquam odit suscipit unde eaque, illum cum consequuntur
+            beatae id officia soluta temporibus. Dolores vel dolorem magni nihil
+            hic possimus autem, nisi sed, corporis, non dolor dolorum? Minus
+            dolore eaque amet consectetur nesciunt eveniet similique nam natus.
+            Sunt, maiores.
+          </div>
+        </main>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/dist/js/sb-sidebar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+
+/* border */
+
+/* .row,
+.icon-box {
+  border: 1px solid red;
+}
+.col,
+.fitur-fitur,
+.fitur-fitur img,
+.fitur-fitur h1,
+.fitur-fitur p {
+  border: 1px solid blue;
+} */
+
+/* end for border */
+
+/* body */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  font-size: 16px;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  margin: auto;
+  color: #333333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1366px !important;
+}
+
+.container-fluid {
+  width: 90%;
+}
+/* end for body */
+
+/* template for txt */
+.txt-1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.txt-2 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.txt-3 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.txt-4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.txt-5 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.txt-6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.txt-7 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.txt-8 {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.txt-grey-1 {
+  color: #333333 !important;
+}
+
+.txt-grey-2 {
+  color: #4f4f4f !important;
+}
+
+.txt-grey-3 {
+  color: #828282 !important;
+}
+
+/* end template for txt */
+
+/* template for button */
+.prim-btn,
+.reg-btn {
+  background: #602a82;
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  border-radius: 8px;
+  color: white;
+  border: 2px solid white;
+}
+
+.prim-btn {
+  transition: background 0.2s, border 0.2s, color 0.2s;
+}
+
+.reg-btn {
+  transition: box-shadow 0.2s;
+}
+
+.prim-btn:hover {
+  background: #ffffff;
+  border: 2px solid #602a82;
+  color: #602a82;
+}
+
+.reg-btn:hover {
+  background: #602a82;
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  border-radius: 8px;
+  color: white;
+}
+
+.sec-btn {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #602a82;
+  transition: box-shadow 0.2s;
+}
+
+.sec-btn:hover {
+  box-shadow: 0px 8px 24px rgba(96, 42, 130, 0.16);
+  color: #602a82;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+/* end template for button */
+
+/* sidebar */
+.sidebar {
+  width: 320px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 0;
+}
+
+.sidebar .nav {
+  min-height: 100vh;
+  width: 320px;
+}
+
+.sidebar .title .nav-link {
+  color: #602a82 !important;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+  margin-left: 56px;
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
+
+.sidebar .nav-item .nav-link .gap {
+  width: 24px;
+}
+
+.sidebar .nav-item .nav-link {
+  padding-left: 56px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: #828282;
+  font-weight: 700;
+}
+
+.sidebar .nav-item .nav-link:hover,
+.sidebar .nav-item .nav-link.active {
+  background: rgba(96, 42, 130, 0.08);
+  color: #602a82 !important;
+}
+
+.sidebar .account {
+  padding-left: 56px;
+  margin-bottom: 50px;
+  padding-top: 24px;
+}
+
+.account .dropdown-toggle::after {
+  content: none;
+}
+
+.account a img {
+  margin-right: 16px;
+}
+
+.dropup .dropdown-menu[data-bs-popper] {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.dropup .dropdown-menu {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.dropup .dropdown-menu .dropdown-item {
+  padding: 12px 24px;
+}
+
+.dropup .dropdown-menu a p,
+.dropup .dropdown-menu a i {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dropup .dropdown-menu li:last-child p,
+.dropup .dropdown-menu li:last-child i {
+  color: #eb5757;
+}
+
+.dropup .dropdown-menu li:not(:last-child) .dropdown-item:hover {
+  background: rgba(96, 42, 130, 0.08);
+}
+
+.dropup .dropdown-menu li:last-child .dropdown-item:hover {
+  background: rgba(235, 87, 87, 0.08);
+}
+
+.dropup .dropdown-menu li:not(:last-child) .dropdown-item:hover p,
+.dropup .dropdown-menu li:not(:last-child) .dropdown-item:hover i {
+  color: #602a82;
+}
+
+.dropup .dropdown-menu li:last-child .dropdown-item:hover p,
+.dropup .dropdown-menu li:last-child .dropdown-item:hover i {
+  color: #eb5757;
+}
+
+/* animasi */
+.animate {
+  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+/* end for animasi */
+
+/* end for sidebar */
+
+/* responsive */
+@media (max-width: 575.98px) {
+  .txt-1 {
+    font-size: 28px;
+  }
+  .txt-2 {
+    font-size: 12px;
+  }
+  .txt-3 {
+    font-size: 10px !important;
+  }
+  .txt-4 {
+    font-size: 12px;
+  }
+  .txt-5 {
+    font-size: 16px;
+  }
+  .txt-6 {
+    font-size: 12px;
+  }
+  .txt-7 {
+    font-size: 16px;
+  }
+  .txt-8 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+
+}
+/* end for responsive */
