@@ -27,6 +27,17 @@
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
+    <!-- CSS for Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <!-- script -->
     <script
       src="https://kit.fontawesome.com/9494cca922.js"
@@ -242,8 +253,8 @@
             <div class="row active-try-out">
               <p class="section-title txt-5 txt-grey-2">Try Out Aktif</p>
               <div class="col">
-                <div class="row row-cols-auto">
-                  <div class="col">
+                <div class="row row-slider left-align-slick" id="row-sliders">
+                  <div class="col d-flex justify-content-start" id="col-slider">
                     <a href="">
                       <div class="card-box d-flex flex-column">
                         <div class="card-content">
@@ -282,7 +293,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col">
+                  <div class="col d-flex justify-content-start" id="col-slider">
                     <a href="">
                       <div class="card-box d-flex flex-column">
                         <div class="card-content">
@@ -307,9 +318,204 @@
                                 align-items-center
                               "
                             >
-                              <div class="few-more-days me-2">
+                              <div class="today me-2">
                                 <p class="txt-9 mb-0" style="color: white">
-                                  2 hari lagi
+                                  Hari ini
+                                </p>
+                              </div>
+                              <p class="txt-8 txt-grey-3 mb-0">
+                                12 - 14 Desember
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col d-flex justify-content-start" id="col-slider">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Try Out 2 Bersiap KSK-P Geografi
+                            </p>
+                            <div
+                              class="
+                                sub-detail
+                                d-flex
+                                flex-row
+                                align-items-center
+                              "
+                            >
+                              <div class="today me-2">
+                                <p class="txt-9 mb-0" style="color: white">
+                                  Hari ini
+                                </p>
+                              </div>
+                              <p class="txt-8 txt-grey-3 mb-0">
+                                12 - 14 Desember
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col d-flex justify-content-start" id="col-slider">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Try Out 2 Bersiap KSK-P Geografi
+                            </p>
+                            <div
+                              class="
+                                sub-detail
+                                d-flex
+                                flex-row
+                                align-items-center
+                              "
+                            >
+                              <div class="today me-2">
+                                <p class="txt-9 mb-0" style="color: white">
+                                  Hari ini
+                                </p>
+                              </div>
+                              <p class="txt-8 txt-grey-3 mb-0">
+                                12 - 14 Desember
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col d-flex justify-content-start" id="col-slider">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Try Out 2 Bersiap KSK-P Geografi
+                            </p>
+                            <div
+                              class="
+                                sub-detail
+                                d-flex
+                                flex-row
+                                align-items-center
+                              "
+                            >
+                              <div class="today me-2">
+                                <p class="txt-9 mb-0" style="color: white">
+                                  Hari ini
+                                </p>
+                              </div>
+                              <p class="txt-8 txt-grey-3 mb-0">
+                                12 - 14 Desember
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col d-flex justify-content-start" id="col-slider">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Try Out 2 Bersiap KSK-P Geografi
+                            </p>
+                            <div
+                              class="
+                                sub-detail
+                                d-flex
+                                flex-row
+                                align-items-center
+                              "
+                            >
+                              <div class="today me-2">
+                                <p class="txt-9 mb-0" style="color: white">
+                                  Hari ini
+                                </p>
+                              </div>
+                              <p class="txt-8 txt-grey-3 mb-0">
+                                12 - 14 Desember
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col d-flex justify-content-start" id="col-slider">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Try Out 2 Bersiap KSK-P Geografi
+                            </p>
+                            <div
+                              class="
+                                sub-detail
+                                d-flex
+                                flex-row
+                                align-items-center
+                              "
+                            >
+                              <div class="today me-2">
+                                <p class="txt-9 mb-0" style="color: white">
+                                  Hari ini
                                 </p>
                               </div>
                               <p class="txt-8 txt-grey-3 mb-0">
@@ -327,7 +533,7 @@
             <div class="row active-class">
               <p class="section-title txt-5 txt-grey-2">Lanjutkan Belajar</p>
               <div class="col">
-                <div class="row row-cols-auto">
+                <div class="row row-slider left-align-slick" id="row-sliders">
                   <div class="col">
                     <a href="">
                       <div class="card-box d-flex flex-column">
@@ -343,9 +549,12 @@
                               class="txt-7 txt-grey-1 mb-2"
                               style="font-weight: 700"
                             >
-                            Besaran Mendasar dalam Astrofisika
+                              Besaran Mendasar dalam Astrofisika
                             </p>
-                            <p class="txt-8 mb-2" style="color: #27AE60; font-weight: 700;">
+                            <p
+                              class="txt-8 mb-2"
+                              style="color: #27ae60; font-weight: 700"
+                            >
                               <span>40%</span> telah dipelajari
                             </p>
                             <p class="txt-8 txt-grey-3 mb-0">
@@ -371,9 +580,12 @@
                               class="txt-7 txt-grey-1 mb-2"
                               style="font-weight: 700"
                             >
-                            Besaran Mendasar dalam Astrofisika
+                              Besaran Mendasar dalam Astrofisika
                             </p>
-                            <p class="txt-8 mb-2" style="color: #27AE60; font-weight: 700;">
+                            <p
+                              class="txt-8 mb-2"
+                              style="color: #27ae60; font-weight: 700"
+                            >
                               <span>40%</span> telah dipelajari
                             </p>
                             <p class="txt-8 txt-grey-3 mb-0">
@@ -399,9 +611,12 @@
                               class="txt-7 txt-grey-1 mb-2"
                               style="font-weight: 700"
                             >
-                            Besaran Mendasar dalam Astrofisika
+                              Besaran Mendasar dalam Astrofisika
                             </p>
-                            <p class="txt-8 mb-2" style="color: #27AE60; font-weight: 700;">
+                            <p
+                              class="txt-8 mb-2"
+                              style="color: #27ae60; font-weight: 700"
+                            >
                               <span>40%</span> telah dipelajari
                             </p>
                             <p class="txt-8 txt-grey-3 mb-0">
@@ -427,9 +642,43 @@
                               class="txt-7 txt-grey-1 mb-2"
                               style="font-weight: 700"
                             >
-                            Besaran Mendasar dalam Astrofisika
+                              Besaran Mendasar dalam Astrofisika
                             </p>
-                            <p class="txt-8 mb-2" style="color: #27AE60; font-weight: 700;">
+                            <p
+                              class="txt-8 mb-2"
+                              style="color: #27ae60; font-weight: 700"
+                            >
+                              <span>40%</span> telah dipelajari
+                            </p>
+                            <p class="txt-8 txt-grey-3 mb-0">
+                              Akses sampai 17 juni 2021
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="">
+                      <div class="card-box d-flex flex-column">
+                        <div class="card-content">
+                          <div class="card-image">
+                            <img
+                              src="./assets/img/Kelas/class-icon-dashboard.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="card-detail text-start">
+                            <p
+                              class="txt-7 txt-grey-1 mb-2"
+                              style="font-weight: 700"
+                            >
+                              Besaran Mendasar dalam Astrofisika
+                            </p>
+                            <p
+                              class="txt-8 mb-2"
+                              style="color: #27ae60; font-weight: 700"
+                            >
                               <span>40%</span> telah dipelajari
                             </p>
                             <p class="txt-8 txt-grey-3 mb-0">
@@ -448,10 +697,77 @@
       </div>
       <!-- end for content -->
     </div>
+    <script src="./assets/dist/js/jquery-3.5.1.slim.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
     <script src="./assets/dist/js/sb-sidebar.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      let sidebar = document.getElementById("row-sliders");
+      if (sidebar.childElementCount > 0) {
+        $(".row.row-slider").slick({
+          row: 0,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          initialSlide: 3,
+          infinite: false,
+          responsive: [
+            {
+              breakpoint: 1600,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+              },
+            },
+            {
+              breakpoint: 1366,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false,
+              },
+            },
+            {
+              breakpoint: 1080,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 830,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 630,
+              settings: {
+                centerMode: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      }
+    </script>
   </body>
 </html>

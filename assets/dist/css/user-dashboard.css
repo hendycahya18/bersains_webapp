@@ -110,6 +110,12 @@ button:focus {
 }
 /* end template for button */
 
+/* slick */
+.left-align-slick > .slick-list > .slick-track {    
+  margin-left:0;
+}
+/* end for slick */
+
 .advertisement,
 .active-try-out {
   margin-bottom: 48px;
