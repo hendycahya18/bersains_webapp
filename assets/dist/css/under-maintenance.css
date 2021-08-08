@@ -1,0 +1,57 @@
+/* .row,
+.icon-box {
+  border: 1px solid red;
+}
+.col,
+.fitur-fitur,
+.fitur-fitur img,
+.fitur-fitur h1,
+.fitur-fitur p {
+  border: 1px solid blue;
+} */
+
+.jumbotron-sr-fc .d-flex,
+.jumbotron-sr-tc .d-flex {
+  height: 380px;
+  /* border: 1px solid green; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-size: 16px;
+  font-family: "Mulish", Arial, Helvetica, sans-serif !important;
+  margin: auto;
+}
+
+.under-maintenance-image {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.container-fluid {
+  width: 90%;
+}
+
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 770px) {
+  .under-maintenance-image img {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+}

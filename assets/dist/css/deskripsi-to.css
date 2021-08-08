@@ -21,7 +21,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background: white;
   font-size: 16px;
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   margin: auto;
@@ -146,19 +146,23 @@ button:focus {
 }
 /* end template for button */
 
-.deskripsi-to,
-.peraturan-to,
-.mulai-to {
-  background: white;
-  padding: 24px;
+.buy-card {
+  width: 268px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
   border-radius: 12px;
-  margin-top: 32px;
 }
 
-.mulai-to {
-  position: -webkit-sticky !important; /* Safari */
-  position: sticky !important;
-  top: 120px;
+.discount-price {
+  font-size: 48px;
+  color: #f2c94c;
+}
+
+.normal-price {
+  font-size: 36px;
+  text-decoration-line: line-through;
+  color: #828282;
 }
 
 .info {
@@ -179,6 +183,8 @@ button:focus {
 }
 
 .start-btn {
+  margin: 24px;
+  width: 220px;
   background: #f2c94c;
   box-shadow: 0px 8px 24px rgba(242, 201, 76, 0.16);
   border-radius: 8px;
@@ -194,6 +200,112 @@ button:focus {
   border: 2px solid #f2c94c;
   box-sizing: border-box;
   border-radius: 8px;
+}
+
+.rekomendasi-to .container-fluid {
+  width: 100% !important;
+}
+
+.rekomendasi-to .card {
+  margin: auto;
+  border-radius: 12px;
+  transition: box-shadow 0.4s, opacity 0.4s;
+  opacity: 0.9;
+}
+
+.rekomendasi-to .card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  opacity: 1;
+}
+
+.rekomendasi-to .card .card-img-top {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.card-body .container .row .nama-try-out {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.card-body .container .row .harga-try-out {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #f2c94c;
+  display: inline;
+}
+
+.card-body .container .row .diskon-try-out {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #828282;
+  text-decoration: line-through;
+  display: inline;
+}
+
+.card-body .container .row .soal-try-out {
+  font-size: 12px;
+  color: #4f4f4f;
+  display: inline;
+}
+
+.card-body .container .row .waktu-try-out {
+  font-size: 12px;
+  color: #4f4f4f;
+  display: inline;
+}
+
+.card-body .container .row .jenis-try-out {
+  font-size: 12px;
+  color: #4f4f4f;
+  display: inline;
+}
+
+.card-body .container .row .sistem-try-out {
+  font-size: 12px;
+  color: #4f4f4f;
+  display: inline;
+}
+
+.card-body .container .row img {
+  display: inline;
+}
+
+.card-body .container .row .rating img {
+  display: inline;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+}
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px !important;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.row.row-slider .col a {
+  text-decoration: none !important;
 }
 
 button a,
